@@ -1,0 +1,137 @@
+import React from "react";
+import styled from "styled-components";
+import { firestore } from "../../firebase";
+import { format } from "date-fns";
+import { ko } from "date-fns/locale";
+import { mobileLAbove } from "../styles/mediaQuery";
+import { COLORS } from "../styles/scheme";
+
+export default function Comment({ id, content, to, from, password, time }) {
+  const onDelete = () => {
+    const pwd = window.prompt("비밀번호를 입력해주세요");
+    if (pwd === password) {
+      firestore.collection("comments").doc(id).delete();
+    } else if (!pwd) {
+      return;
+    } else {
+      alert("비밀번호가 일치하지 않습니다.");
+    }
+  };
+
+  const date = format(time.toDate(), "yyyy년 MM월 dd일 HH:mm", { locale: ko });
+  return (
+    <Wrapper>
+      <Inner>
+        <To className="gothic">To. {to}</To>
+        <Content className="gothic">{content}</Content>
+        <From className="gothic">From. {from}</From>
+      </Inner>
+      <Delete onClick={onDelete}>&times;</Delete>
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  position: relative;
+  flex-grow: 1;
+  word-break: break-all;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  border-bottom: 1px solid ${COLORS.primary};
+  ${mobileLAbove`
+    align-items: center;
+  `}
+`;
+
+const Inner = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: auto;
+  align-items: center;
+  ${mobileLAbove`
+    align-items: center;
+    flex-direction: row;  
+  `}
+`;
+
+const Delete = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.45rem;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  color: ${COLORS.primary};
+  background: none;
+  :focus {
+    outline: none;
+  }
+  ${mobileLAbove`
+    font-size: 1.5rem;
+    padding: 0.35rem;
+  `}
+`;
+
+const Header = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const To = styled.p`
+  font-size: 1rem;
+  color: ${COLORS.primary};
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 0.65rem;
+  font-weight: 700;
+  ${mobileLAbove`
+    width: 100px;
+    min-width: 100px;
+    margin-bottom: 0;
+  `}
+`;
+const From = styled.p`
+  font-size: 1rem;
+  color: ${COLORS.primary};
+  width: 100%;
+  min-width: 100%;
+  font-weight: 700;
+  text-align: end;
+  margin-top: 0.65rem;
+  margin-right: -50px;
+  ${mobileLAbove`
+    width: 100px;
+    margin-top: 0;
+    margin-right: 0;
+    min-width: 100px;
+  `}
+`;
+
+const Date = styled.p`
+  color: #555;
+  font-size: 0.8rem;
+  display: inline-block;
+`;
+
+const Content = styled.p`
+  margin-right: auto;
+  line-height: 1.4;
+  font-size: 1rem;
+  flex-basis: 100%;
+  word-break: keep-all;
+  font-weight: 700;
+  color: ${COLORS.primary};
+  ${mobileLAbove`
+  `}
+`;

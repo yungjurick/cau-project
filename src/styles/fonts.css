@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Helvetica33";
+  src: url("../static/fonts/helveticaneue-thin.woff2") format("woff2"),
+    url("../static/fonts/helveticaneue-thin.woff") format("woff"),
+    url("../static/fonts/helveticaneue-thin.ttf") format("truetype"),
+    url("../static/fonts/helveticaneue-thin.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica33";
+  src: url("../static/fonts/Helvetica43.woff2") format("woff2"),
+    url("../static/fonts/Helvetica43.woff") format("woff"),
+    url("../static/fonts/Helvetica43.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MGothic";
+  src: url("../static/fonts/Mgothic30.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MGothic";
+  src: url("../static/fonts/Mgothic80.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
