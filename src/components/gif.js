@@ -14,7 +14,7 @@ import team6src4 from "../static/images/handle/team6/4.gif";
 import team7src14 from "../static/images/handle/team7/14.gif";
 import boxTeam1Src1 from "../static/images/box/team1/5.gif";
 import boxTeam52 from "../static/images/box/team5/2.gif";
-import boxTeam54 from "../static/images/box/team5/4.gif";
+// import boxTeam54 from "../static/images/box/team5/4.gif";
 import boxTeam55 from "../static/images/box/team5/5.gif";
 import boxTeam57 from "../static/images/box/team5/7.gif";
 import boxTeam58 from "../static/images/box/team5/8.gif";
@@ -40,7 +40,7 @@ const sources = {
   handleTeam7: team7src14,
   boxTeam1Src1,
   boxTeam52,
-  boxTeam54,
+  // boxTeam54,
   boxTeam55,
   boxTeam57,
   boxTeam58,
