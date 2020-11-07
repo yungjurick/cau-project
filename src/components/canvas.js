@@ -207,7 +207,7 @@ export default function Canvas({ ...props }) {
 
     init();
     animate();
-  }, []);
+  }, [sourceList]);
   return <CanvasComponent id="canvas" {...props} />;
 }
 

@@ -4,11 +4,11 @@ import Nav from "./nav";
 import { SIZES } from "../styles/scheme";
 import { mobileLAbove } from "../styles/mediaQuery";
 
-export default function Layout({ children, noNav, noFooter }) {
+export default function Layout({ children, noNav, ...props }) {
   return (
     <React.Fragment>
       <Nav noNav={noNav} />
-      <Main>{children}</Main>
+      <Main {...props}>{children}</Main>
     </React.Fragment>
   );
 }

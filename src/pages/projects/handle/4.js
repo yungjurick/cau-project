@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
-import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/handle/team4/thumb.jpg";
 import src2 from "../../../static/images/projects/handle/team4/2.jpg";
@@ -57,7 +56,7 @@ export default () => {
       <Zoom margin="0">
         <Image src={src6} />
       </Zoom>
-      {/* <Gif name="handleTeam4Eleven" /> */}
+      <Gif name="handleTeam4Eleven" />
       <Zoom margin="0">
         <Image src={src7} />
       </Zoom>

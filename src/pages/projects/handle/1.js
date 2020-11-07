@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
+import Video from "../../../components/video";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/handle/team1/flex_us.jpg";
 
@@ -28,11 +29,13 @@ export default () => {
       <Zoom>
         <Image src={src1} />
       </Zoom>
+      <Video src="https://youtube.com/embed/iQR8zESN_UM" />
     </ProjectLayout>
   );
 };
 
 
 const Image = styled.img`
+  width: 100%;
   max-width: 1200px;
 `;

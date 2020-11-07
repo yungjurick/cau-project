@@ -81,6 +81,9 @@ export default function ProjectsPage() {
             style={{ background: "transparent" }}
           ></Cursor>
           <div
+            aria-hidden="true"
+            tabIndex="-1"
+            role="button"
             onClick={() => navigate("/")}
             style={{
               display: "block",

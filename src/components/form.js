@@ -1,30 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { firestore } from "../../firebase";
-import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
+import { tabletAbove } from "../styles/mediaQuery";
 import { COLORS, FONT_FAMILY_GOTHIC } from "../styles/scheme";
 import Select from "react-dropdown-select";
 import { projectInfo } from "../config/projects";
-import {
-  sortByDesc,
-  log,
-  map,
-  values,
-  sel,
-  mapL,
-  tap,
-  unique,
-  flat,
-  filter,
-  go,
-  sortBy,
-  identity,
-  chunkL,
-  takeAll,
-  match,
-  not,
-  noop,
-} from "fxjs";
+import { map, values, sel, unique, flat, go, sortBy, identity } from "fxjs";
 
 const checkStr = str => {
   if (!str) return false;

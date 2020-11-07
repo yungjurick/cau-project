@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { laptopAbove, mobileLAbove } from "../styles/mediaQuery";
+import { mobileLAbove } from "../styles/mediaQuery";
 import styled, { css } from "styled-components";
 import Img from "gatsby-image";
 

@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 import { laptopAbove, mobileLAbove, tabletAbove } from "../styles/mediaQuery";
-import { range } from "fxjs";
 
 export default function AboutPage() {
   const [mouse, setMouse] = useState({});
@@ -74,6 +73,9 @@ export default function AboutPage() {
           style={{ background: "transparent" }}
         ></Cursor>
         <div
+          aria-hidden="true"
+          tabIndex="-1"
+          role="button"
           onClick={() => window.history.back()}
           style={{
             display: "block",

@@ -42,5 +42,5 @@ export default function Zoom({ children, margin = "4rem 0" }) {
 const Fit = styled.div`
   font-size: 0;
   margin: ${props => props.margin};
-  cursor: zoom-in;
+  /* cursor: zoom-in; */
 `;

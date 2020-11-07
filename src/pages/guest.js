@@ -13,23 +13,19 @@ import Select from "react-dropdown-select";
 import { projectInfo } from "../config/projects";
 import {
   sortByDesc,
-  log,
   map,
   values,
   sel,
   mapL,
-  tap,
   unique,
   flat,
   filter,
   go,
-  chunkL,
   takeAll,
   match,
   not,
   sortBy,
   identity,
-  noop,
 } from "fxjs";
 
 const sortByTime = sortByDesc(sel("time"));

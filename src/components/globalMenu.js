@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
 import closeIcon from "../static/images/times-solid.svg";
@@ -9,7 +9,7 @@ import searchIconSrc from "../static/images/search-solid.svg";
 import AccordionMenu from "./accordion";
 import { COLORS } from "../styles/scheme";
 import { projectInfo } from "../config/projects";
-import { map, tap, log, flat, values, go, filter } from "fxjs";
+import { map, flat, values, go, filter } from "fxjs";
 
 export default function GlobalMenu() {
   const [isActive, setIsActive] = useState(false);

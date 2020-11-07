@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
+import { mobileLAbove } from "../styles/mediaQuery";
 import { SIZES } from "../styles/scheme";
 import Footer from "./footer";
 
@@ -40,10 +40,6 @@ const Container = styled.div`
 
 const Content = styled.div`
   position: relative;
-  overflow-y: initial;
-  ${tabletAbove`
-    overflow-y: scroll;
-  `}
   width: 100%;
 `;
 

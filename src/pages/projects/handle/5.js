@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Desc from "../../../components/desc";
-import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/handle/team5/1.jpg";
 import src2 from "../../../static/images/projects/handle/team5/2.jpg";
-import Video from "../../../components/video";
 
 export default () => {
   return (

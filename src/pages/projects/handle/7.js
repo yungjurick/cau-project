@@ -5,7 +5,6 @@ import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
-import Video from "../../../components/video";
 import src1 from "../../../static/images/projects/handle/team7/1.jpg";
 import src2 from "../../../static/images/projects/handle/team7/2.jpg";
 import src3 from "../../../static/images/projects/handle/team7/3.jpg";
@@ -44,7 +43,7 @@ export default () => {
         margin="0"
         style={{ padding: "10%" }}
         top="12.6%"
-        src="https://www.youtube.com/embed/Bx0EJwTMXtk"
+        src="https://www.youtube.com/embed/FrSYijC4SBo"
       >
         <Zoom margin="0">
           <Image src={src1} />

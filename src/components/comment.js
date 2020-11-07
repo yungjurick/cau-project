@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { firestore } from "../../firebase";
-import { format } from "date-fns";
-import { ko } from "date-fns/locale";
+// import { format } from "date-fns";
+// import { ko } from "date-fns/locale";
 import { mobileLAbove } from "../styles/mediaQuery";
 import { COLORS } from "../styles/scheme";
 
-export default function Comment({ id, content, to, from, password, time }) {
+export default function Comment({ id, content, to, from, password }) {
   const onDelete = () => {
     const pwd = window.prompt("비밀번호를 입력해주세요");
     if (pwd === password) {
@@ -18,7 +18,6 @@ export default function Comment({ id, content, to, from, password, time }) {
     }
   };
 
-  const date = format(time.toDate(), "yyyy년 MM월 dd일 HH:mm", { locale: ko });
   return (
     <Wrapper>
       <Inner>
@@ -82,11 +81,6 @@ const Delete = styled.button`
   `}
 `;
 
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
 
 const To = styled.p`
   font-size: 1rem;
@@ -118,11 +112,6 @@ const From = styled.p`
   `}
 `;
 
-const Date = styled.p`
-  color: #555;
-  font-size: 0.8rem;
-  display: inline-block;
-`;
 
 const Content = styled.p`
   margin-right: auto;
@@ -132,6 +121,4 @@ const Content = styled.p`
   word-break: keep-all;
   font-weight: 700;
   color: ${COLORS.primary};
-  ${mobileLAbove`
-  `}
 `;
