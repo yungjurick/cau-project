@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 import { Link } from "gatsby";
 import { mobileLAbove } from "../styles/mediaQuery";
-import { FONT_FAMILY, FONT_FAMILY_GOTHIC } from "../styles/scheme";
+import { FONT_FAMILY_GOTHIC } from "../styles/scheme";
 
 export default function Projects({ projects = [] }) {
   useEffect(() => {

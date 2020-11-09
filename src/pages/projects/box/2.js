@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/box/team2/1.png";

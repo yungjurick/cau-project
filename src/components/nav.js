@@ -1,7 +1,6 @@
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import Img from "gatsby-image";
 import { COLORS, SIZES } from "../styles/scheme";
 import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
 import SEO from "./seo";
@@ -9,17 +8,6 @@ import GlobalMenu from "./globalMenu";
 import brandSrc from "../static/images/brand.png";
 
 export default function Nav({ noNav }) {
-  const data = useStaticQuery(graphql`
-    query {
-      brand: file(relativePath: { eq: "brand.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 240) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
   if (noNav) return null;
   return (
     <Navigation>
@@ -27,24 +15,36 @@ export default function Nav({ noNav }) {
       <Container>
         <LogoCover>
           <Logo to="/projects" />
-          <img style={{ width: "100%" }} src={brandSrc} />
+          <img alt="어디로든문" style={{ width: "100%" }} src={brandSrc} />
         </LogoCover>
         <Menus left>
-          <Menu style={{ left: "30px"}} to="/projects/handle/" activeClassName="active">
+          <Menu
+            style={{ left: "30px" }}
+            to="/projects/handle/"
+            activeClassName="active"
+          >
             Handle
           </Menu>
-          <Menu style={{ left: "120px"}} to="/projects/box/" activeClassName="active">
+          <Menu
+            style={{ left: "120px" }}
+            to="/projects/box/"
+            activeClassName="active"
+          >
             Box
           </Menu>
-          <Menu style={{ left: "180px"}} to="/projects/frame/" activeClassName="active">
+          <Menu
+            style={{ left: "180px" }}
+            to="/projects/frame/"
+            activeClassName="active"
+          >
             Frame
           </Menu>
         </Menus>
         <Menus right>
-          <Menu style={{ right: "90px"}} to="/guest/" activeClassName="active">
+          <Menu style={{ right: "90px" }} to="/guest/" activeClassName="active">
             Guest
           </Menu>
-          <Menu style={{ right: "16px"}} to="/about/" activeClassName="active">
+          <Menu style={{ right: "16px" }} to="/about/" activeClassName="active">
             About
           </Menu>
         </Menus>
