@@ -26,6 +26,7 @@ export default () => {
         가능성을 열어두고, 현재의 기술과 근미래의 기술들을 접목하여 그 시작을
         열어보려 한다.
       </Desc>
+      <div style={{ marginTop: "4rem" }} />
       <Gif name="handleTeam4One" />
       <Zoom margin="0">
         <Image src={src2} />
@@ -36,7 +37,7 @@ export default () => {
       />
       <Zoom margin="0">
         <Image src={src3} />
-      </Zoom> 
+      </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/cGBvr1j3iFA"

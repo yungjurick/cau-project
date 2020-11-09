@@ -10,9 +10,8 @@ import src2 from "../../../static/images/projects/handle/team5/2.jpg";
 export default () => {
   return (
     <ProjectLayout title="EVERYONEDAY" names="박연주">
-      <Desc fw={400}>
-        모든 원데이클래스가 있는 곳, 모든 이의 하루를 위한 곳,{" "}
-        <span style={{ fontWeight: 800 }}>'에브리원데이'</span>
+      <Desc fw={700}>
+        모든 원데이클래스가 있는 곳, 모든 이의 하루를 위한 곳, '에브리원데이'
       </Desc>
 
       <Desc fw={400}>

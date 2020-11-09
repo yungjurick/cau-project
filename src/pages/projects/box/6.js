@@ -4,7 +4,6 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
-import src0 from "../../../static/images/projects/box/team6/0.png";
 import src1 from "../../../static/images/projects/box/team6/1.png";
 import src2 from "../../../static/images/projects/box/team6/2.png";
 import src3 from "../../../static/images/projects/box/team6/3.png";
@@ -51,14 +50,10 @@ export default () => {
 
       <WrapForTeam
         margin="0"
-        top="52.2%"
-        src="https://www.youtube.com/embed/NUCokiS_Vxs"
+        top="46.2%"
+        src="https://www.youtube.com/embed/1xqjHOOweao"
       >
         <Zoom margin="4rem 0 0 0">
-          <Image src={src0} />
-        </Zoom>
-
-        <Zoom margin="0">
           <Image src={src1} />
         </Zoom>
 

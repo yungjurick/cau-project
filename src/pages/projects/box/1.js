@@ -25,13 +25,13 @@ export default () => {
         어반디케이 신사 가로수길 플래그십 스토어 ‘LOOK FOR’은 어반디케이와
         왕좌의 게임 콜라보 제품을 홍보하는 체험형 공간 입니다. 눈으로 보고 귀로
         들으며 손으로 만져보고 향을 맡으며 오감을 이용해 체험하면서 많은
-        사람들이 찾지 못한 자신만의 개성 즉 열쇠를 찾아줍니다. ‘LOOK FOK’에서
+        사람들이 찾지 못한 자신만의 개성 즉 열쇠를 찾아줍니다. ‘LOOK FOR’에서
         본인만의 ‘열쇠’를 찾아 보세요.
       </Desc>
 
       <Video
         style={{ marginTop: "4rem" }}
-        src="https://www.youtube.com/embed/Jfip0U8ufGQ"
+        src="https://www.youtube.com/embed/4Sxu8EpeIyg"
       />
 
       <Zoom margin="4rem 0">
