@@ -30,7 +30,7 @@ export default function AccordionMenu({ keys = [] }) {
       >
         Home
       </MenuItem>
-      <Accordion allowZeroExpanded allowMultipleExpanded>
+      <Accordion allowZeroExpanded>
         {keys.map(key => (
           <Item key={key} style={{ marginBottom: "1rem" }}>
             <AccordionItemHeading>

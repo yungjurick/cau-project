@@ -6,6 +6,7 @@ import { COLORS, SIZES } from "../styles/scheme";
 import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
 import SEO from "./seo";
 import GlobalMenu from "./globalMenu";
+import brandSrc from "../static/images/brand.png";
 
 export default function Nav({ noNav }) {
   const data = useStaticQuery(graphql`
@@ -26,27 +27,24 @@ export default function Nav({ noNav }) {
       <Container>
         <LogoCover>
           <Logo to="/projects" />
-          <Img
-            imgStyle={{ objectFit: "contain" }}
-            fluid={data.brand.childImageSharp.fluid}
-          />
+          <img style={{ width: "100%" }} src={brandSrc} />
         </LogoCover>
         <Menus left>
-          <Menu to="/projects/handle/" activeClassName="active">
+          <Menu style={{ left: "30px"}} to="/projects/handle/" activeClassName="active">
             Handle
           </Menu>
-          <Menu to="/projects/box/" activeClassName="active">
+          <Menu style={{ left: "120px"}} to="/projects/box/" activeClassName="active">
             Box
           </Menu>
-          <Menu to="/projects/frame/" activeClassName="active">
+          <Menu style={{ left: "180px"}} to="/projects/frame/" activeClassName="active">
             Frame
           </Menu>
         </Menus>
         <Menus right>
-          <Menu to="/guest/" activeClassName="active">
+          <Menu style={{ right: "90px"}} to="/guest/" activeClassName="active">
             Guest
           </Menu>
-          <Menu to="/about/" activeClassName="active">
+          <Menu style={{ right: "16px"}} to="/about/" activeClassName="active">
             About
           </Menu>
         </Menus>
@@ -89,13 +87,13 @@ const Container = styled.div`
 const LogoCover = styled.div`
   position: absolute;
   width: 150px;
-  top: 20px;
+  top: 25px;
   left: 0;
   right: 0;
   margin: auto;
   ${mobileLAbove`
     width: 200px;
-    top: 28px;
+    top: 38px;
   `}
 `;
 
@@ -125,6 +123,7 @@ const Menu = styled(Link)`
   font-weight: 400;
   font-size: 1.3rem;
   height: 100%;
+  position: absolute;
   color: ${COLORS.primary};
   letter-spacing: 1.2px;
   &.active {

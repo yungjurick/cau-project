@@ -83,11 +83,10 @@ export default function GlobalMenu() {
                   <SearchLink key={d.link} to={d.link}>
                     <Dash />
                     <span className="gothic" style={{ marginRight: "5px" }}>
-                      {"<"}
-                      {d.title}
-                      {">"}&nbsp; by
+                      {d.project} {">"}&nbsp;
+                      {d.title}&nbsp;{">"}
                     </span>
-                    <span className="gothic">{d.people.join(" | ")}</span>
+                    <span className="gothic">{d.people.join(" ")}</span>
                   </SearchLink>
                 ))}
               </ResultBox>
@@ -132,11 +131,10 @@ export default function GlobalMenu() {
                       >
                         <Dash style={{ width: "10px" }} />
                         <span className="gothic" style={{ marginRight: "5px" }}>
-                          {"<"}
-                          {d.title}
-                          {">"}&nbsp; by
+                          {d.project} {">"}&nbsp;
+                          {d.title}&nbsp;{">"}
                         </span>
-                        <span className="gothic">{d.people.join(" | ")}</span>
+                        <span className="gothic">{d.people.join(" ")}</span>
                       </SearchLink>
                     ))}
                   </ResultBox>
@@ -246,16 +244,8 @@ const Menu = styled.nav`
   left: 0;
   top: 0;
   bottom: 0;
-  background: #efefef;
-  background-size: 16px 16px;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 41, 245, 0.2) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(0, 41, 245, 0.2) 1px, transparent 1px);
-  background-position-x: 25px;
-  background-repeat: repeat;
+  background: #fff;
+
   padding: 1.2rem;
   ${mobileLAbove`
     width: 350px;

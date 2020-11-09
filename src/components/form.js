@@ -104,7 +104,7 @@ export function Form({ handleFilter }) {
         onChange={onChangePassword}
         placeholder="비밀번호"
       />
-      <Button disabled={!isButtonAbled()}>제출</Button>
+      <Button disabled={!isButtonAbled()}>SEND</Button>
     </Container>
   );
 }
@@ -241,11 +241,11 @@ const Password = styled.input`
 `;
 const Button = styled.button`
   background: ${COLORS.primary};
+  border: 1px solid ${COLORS.primary};
   cursor: pointer;
   color: #fff;
   font-weight: 700;
   padding: 0.6rem 1rem;
-  border: 0;
   margin-top: 1.2rem;
   width: 100%;
   height: 40px;
@@ -256,7 +256,8 @@ const Button = styled.button`
     flex-basis: 100px;
   `}
   :disabled {
-    background: #888;
+    color: ${COLORS.primary};
+    background: #fff;
     cursor: not-allowed;
   }
 `;

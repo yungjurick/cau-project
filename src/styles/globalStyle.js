@@ -25,6 +25,7 @@ textarea, input {
 
 body {
   position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -43,6 +44,9 @@ p {
 }
 
 a {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   :visited {
     color: ${COLORS.primary};

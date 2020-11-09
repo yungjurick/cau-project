@@ -39,21 +39,21 @@ const Wrapper = styled.div`
   height: 100%;
   flex-basis: 100%;
   flex-wrap: wrap;
-  margin-right: -20px;
+  margin-right: -15px;
   ${mobileLAbove`
-    margin-right: -40px;
+    margin-right: -15px;
   `}
 `;
 
 const ImageCover = styled.div`
   position: relative;
-  flex-basis: calc(50% - 20px);
-  margin-top: 20px;
-  margin-right: 20px;
+  flex-basis: calc(50% - 15px);
+  margin-top: 15px;
+  margin-right: 15px;
   ${mobileLAbove`
-    flex-basis: calc(33.333333% - 40px);
-    margin-top: 40px;
-    margin-right: 40px;
+    flex-basis: calc(33.333333% - 15px);
+    margin-top: 15px;
+    margin-right: 15px;
   `};
 `;
 
@@ -71,9 +71,23 @@ const AbsoluteLink = styled(Link)`
   transition: background linear 0.3s;
   :hover {
     background: rgba(0, 0, 0, 0.5);
-    ::after,
+    ::after {
+      content: "${props => props.peoplenames}";
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      font-weight: 300;
+      font-size: 16px;
+    }
     ::before {
+      text-align: center;
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      font-weight: 8800;
       content: "${props => props.teamname}";
+      bottom: 50px;
+      color: #fff;
     }
   }
   ::after,
@@ -95,7 +109,6 @@ const AbsoluteLink = styled(Link)`
   ::before {
     content: none;
     bottom: 4%;
-    color: transparent;
     border-bottom: 2px solid #fff;
   }
 `;
