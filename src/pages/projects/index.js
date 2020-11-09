@@ -134,7 +134,7 @@ export default function ProjectsPage() {
               Box
               <Highlight />
             </TeamName>
-            <Name>Studio.Jang</Name>
+            <Name>Studio.Chang</Name>
           </Info>
         </Team>
         <Team>

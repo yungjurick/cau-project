@@ -97,20 +97,17 @@ export default function AboutPage() {
         </div>
       </MobileGone>
       <Wrapper>
-        <Img fluid={data.posterImg.childImageSharp.fluid} />
         <Inner>
           <H1 className="gothic">어디로든 문</H1>
-          <P className="gothic">
-            전시소개 어쩌고 저쩌고 전시소개 어쩌고 저쩌고 전시소개 어쩌고 저쩌고
-            전시소개 어쩌고 저쩌고. 전시소개 어 쩌고 저쩌고전시소개 어쩌고
-            저쩌고전시소개 어쩌고 저쩌고. 전시소개 어쩌고 저쩌고 전시소개 어쩌고
-            저쩌고전시소개 어쩌고 저쩌고전시소개 어쩌고 저쩌고. 전시소개 어쩌고
-            저쩌고 전시소개 어쩌고 저쩌고전시소개 어쩌고 저쩌고전시소개 어쩌고
-            저쩌고. 전시소개 어쩌고 저쩌고 전시소개 어쩌고 저쩌고전시소개 어쩌고
-            저쩌고전시소개 어쩌고 저쩌고.전시소개 어쩌고 저쩌고 전시소개 어쩌고
-            저쩌고전시소개 어쩌고 저쩌고전시소개 어쩌고 저쩌고.전시소개 어쩌고
-            저쩌고 전시소개 어쩌고 저쩌고전시소개 어쩌고 저쩌고전시소개 어쩌고
-            저쩌고.
+          <P
+            className="gothic"
+            style={{ wordBreak: "keep-all", textAlign: "justify" }}
+          >
+            중앙대학교 실내환경디자인학과 제 16회 졸업작품 전시회{" "}
+            {"<어디로든 문 : A door, can go everywhere>"}전은 만화 ‘도라에몽’의
+            어디로든 갈 수 있는 문에서 영감을 얻은 타이틀로 어떤 공간이든
+            무한으로 상상 가능하다는 의미와, 이 전시가 우리에게 원하는 미래
+            어디든 갈 수 있는 문이 되길 바라는 의미를 담고 있다.
           </P>
           <H1HN>Exhibition Composition</H1HN>
           <Flex>
@@ -119,8 +116,10 @@ export default function AboutPage() {
               <P2 className="gothic">Instagram @chic.grad</P2>
             </Left>
             <Right>
-              <P1 className="gothic">학교 이메일</P1>
-              <P2 className="gothic">학교 전화번호</P2>
+              <P1 className="gothic">
+                학교 홈페이지 http://www.indesign.cau.ac.kr/
+              </P1>
+              <P2 className="gothic">학교 전화번호 031-670-4788</P2>
             </Right>
           </Flex>
           <H2HN className="gothic">지도 교수</H2HN>
@@ -139,10 +138,20 @@ export default function AboutPage() {
             </R2>
           </Flex2>
           <H2HN className="gothic">전시참여학생</H2HN>
-          <P1 className="gothic" style={{ lineHeight: 1.8 }}>
-            홍길동, 홍길동, 홍길동, 홍길동, 홍길동, 홍길동, 홍길동, 홍길동,
-            홍길동, 홍길동, 홍길동, 홍길동, 도라에몽,
-            도라에몽,도라에몽,도라에몽,도라에몽,도라에몽,도라에몽,
+          <P1
+            className="gothic"
+            style={{
+              lineHeight: 1.8,
+              wordBreak: "keep-all",
+              textAlign: "justify",
+            }}
+          >
+            강동희, 강민지, 강유정, 곽가, 구가영, 권희영, 김명주, 김미나,
+            김이현, 김현경, 김혜진, 마정서, 박연주, 박예진, 박준수, 박지현,
+            박충실, 부림림, 안현정, 양지원, 양진선, 유사동, 육자, 윤수지,
+            윤자경, 이나경, 이박문, 이시혜, 이주영, 이한선, 이효정, 임아림,
+            장령희, 장열, 정민지, 조민경, 주연성, 최연호, 한유진, 한채윤,
+            한혜인, 황상윤, 황예린
           </P1>
           <H2HN className="gothic">졸업준비위원회</H2HN>
           <Space />
@@ -150,29 +159,25 @@ export default function AboutPage() {
             <L3>
               <LabelFlex>
                 <P1 className="gothic">위원장</P1>
-                <P2 className="gothic">홍길동</P2>
+                <P2 className="gothic">조민경</P2>
               </LabelFlex>
               <LabelFlex>
                 <P1 className="gothic">부위원장</P1>
-                <P2 className="gothic">홍길동</P2>
+                <P2 className="gothic">양지원</P2>
               </LabelFlex>
               <LabelFlex>
                 <P1 className="gothic">기획부</P1>
-                <P2 className="gothic">도라에동, 홍길동, 친구</P2>
+                <P2 className="gothic">김미나, 박연주, 박예진, 이나경</P2>
               </LabelFlex>
             </L3>
             <R3>
               <LabelFlex>
                 <P1 className="gothic">섭외부</P1>
-                <P2 className="gothic">도라에몽, 홍길동, 친구</P2>
+                <P2 className="gothic">윤수지, 한혜인</P2>
               </LabelFlex>
               <LabelFlex>
                 <P1 className="gothic">총무부</P1>
-                <P2 className="gothic">도라에몽, 홍길동, 친구</P2>
-              </LabelFlex>
-              <LabelFlex>
-                <P1 className="gothic">위원장</P1>
-                <P2 className="gothic">도라에몽, 홍길동, 친구</P2>
+                <P2 className="gothic">양지원, 양진선</P2>
               </LabelFlex>
             </R3>
           </Flex>
@@ -224,12 +229,12 @@ const Inner = styled.div`
 `;
 
 const H1 = styled.h3`
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -1.2px;
   ${mobileLAbove`
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-size: 1.8rem;
   `}
 `;
