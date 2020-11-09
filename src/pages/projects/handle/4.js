@@ -4,7 +4,6 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/handle/team4/thumb.jpg";
 import src2 from "../../../static/images/projects/handle/team4/2.jpg";
 import src3 from "../../../static/images/projects/handle/team4/4.jpg";
 import src4 from "../../../static/images/projects/handle/team4/7.jpg";
@@ -27,9 +26,6 @@ export default () => {
         가능성을 열어두고, 현재의 기술과 근미래의 기술들을 접목하여 그 시작을
         열어보려 한다.
       </Desc>
-      <Zoom margin="4rem 0 0 0">
-        <Image src={src1} />
-      </Zoom>
       <Gif name="handleTeam4One" />
       <Zoom margin="0">
         <Image src={src2} />
@@ -40,10 +36,10 @@ export default () => {
       />
       <Zoom margin="0">
         <Image src={src3} />
-      </Zoom>
+      </Zoom> 
       <Video
         style={{ margin: 0 }}
-        src="https://www.youtube.com/embed/ZcQkujHG-Ig"
+        src="https://www.youtube.com/embed/cGBvr1j3iFA"
       />
       <Gif name="handleTeam4Six" />
       <Zoom margin="0">
@@ -60,13 +56,13 @@ export default () => {
       <Zoom margin="0">
         <Image src={src7} />
       </Zoom>
-      <Zoom margin="0">
-        <Image src={src8} />
-      </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/dHDyqOM4ITA"
       />
+      <Zoom margin="0">
+        <Image src={src8} />
+      </Zoom>
     </ProjectLayout>
   );
 };

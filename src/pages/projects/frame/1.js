@@ -4,9 +4,10 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/frame/team1/1.jpg";
-import src2 from "../../../static/images/projects/frame/team1/2.jpg";
+import src2 from "../../../static/images/projects/frame/team1/2.png";
 import src3 from "../../../static/images/projects/frame/team1/3.jpg";
 import src4 from "../../../static/images/projects/frame/team1/4.jpg";
+import src5 from "../../../static/images/projects/frame/team1/5.jpg";
 
 export default () => {
   return (
@@ -33,6 +34,9 @@ export default () => {
 
       <Zoom margin="0">
         <Image src={src4} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src5} />
       </Zoom>
     </ProjectLayout>
   );

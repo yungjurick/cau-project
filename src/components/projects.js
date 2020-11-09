@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 import { Link } from "gatsby";
 import { mobileLAbove } from "../styles/mediaQuery";
-import { FONT_FAMILY } from "../styles/scheme";
+import { FONT_FAMILY, FONT_FAMILY_GOTHIC } from "../styles/scheme";
 
 export default function Projects({ projects = [] }) {
   useEffect(() => {
@@ -67,7 +67,7 @@ const AbsoluteLink = styled(Link)`
   height: 100%;
   z-index: 8;
   cursor: pointer;
-  font-family: ${FONT_FAMILY};
+  font-family: ${FONT_FAMILY_GOTHIC};
   transition: background linear 0.3s;
   :hover {
     background: rgba(0, 0, 0, 0.5);
@@ -85,7 +85,7 @@ const AbsoluteLink = styled(Link)`
     left: 5%;
     margin: auto;
     color: #fff;
-    font-family: ${FONT_FAMILY};
+    font-family: ${FONT_FAMILY_GOTHIC};
     font-size: 1.6rem;
   }
   :after {

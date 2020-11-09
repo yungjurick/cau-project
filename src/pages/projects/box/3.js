@@ -3,7 +3,24 @@ import styled from "styled-components";
 import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/box/team3/1.png";
+import src1 from "../../../static/images/projects/box/team3/01.jpg";
+import src2 from "../../../static/images/projects/box/team3/02.jpg";
+import src3 from "../../../static/images/projects/box/team3/03.jpg";
+import src4 from "../../../static/images/projects/box/team3/04.jpg";
+import src5 from "../../../static/images/projects/box/team3/05.jpg";
+import src6 from "../../../static/images/projects/box/team3/06.jpg";
+import src7 from "../../../static/images/projects/box/team3/07.jpg";
+import src8 from "../../../static/images/projects/box/team3/08.jpg";
+import src9 from "../../../static/images/projects/box/team3/09.jpg";
+import src10 from "../../../static/images/projects/box/team3/10.jpg";
+import src11 from "../../../static/images/projects/box/team3/11.jpg";
+import src12 from "../../../static/images/projects/box/team3/12.jpg";
+import src13 from "../../../static/images/projects/box/team3/13.jpg";
+import src14 from "../../../static/images/projects/box/team3/14.jpg";
+import src15 from "../../../static/images/projects/box/team3/15.jpg";
+import src16 from "../../../static/images/projects/box/team3/16.jpg";
+import src17 from "../../../static/images/projects/box/team3/17.jpg";
+import src18 from "../../../static/images/projects/box/team3/18.jpg";
 
 import Video from "../../../components/video";
 
@@ -22,12 +39,73 @@ export default () => {
 
       <Video
         style={{ marginTop: "4rem" }}
-        src="https://www.youtube.com/embed/xd7YE9ijrtc"
+        src="https://www.youtube.com/embed/CwcmuPDtw-c"
       />
 
-      <Zoom margin="4rem 0">
+      <Zoom margin="4rem 0 0 0">
         <Image src={src1} />
       </Zoom>
+      <Zoom margin="0">
+        <Image src={src2} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src3} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src4} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src5} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src6} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src7} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src8} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src9} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src10} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src11} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src12} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src13} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src14} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src15} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src16} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src17} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src18} />
+      </Zoom>
+      <Desc style={{ textAlign: "center", marginTop: "4rem" }} fw={400}>
+        <a
+          style={{ textDecoration: "underline" }}
+          href="https://naver.me/FEtydsr3"
+          rel="noreferrer"
+          target="_blank"
+        >
+          이현에게 소감 남기기
+        </a>
+      </Desc>
     </ProjectLayout>
   );
 };

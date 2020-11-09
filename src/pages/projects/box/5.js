@@ -6,6 +6,7 @@ import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/box/team5/1.jpg";
 import src3 from "../../../static/images/projects/box/team5/3.jpg";
+import src4_1 from "../../../static/images/projects/box/team5/4_1.jpg";
 import src6 from "../../../static/images/projects/box/team5/6.jpg";
 import src9 from "../../../static/images/projects/box/team5/9.jpg";
 import src11 from "../../../static/images/projects/box/team5/11.jpg";
@@ -17,12 +18,13 @@ import Video from "../../../components/video";
 export default () => {
   return (
     <ProjectLayout title="매일이 메아리" names="임아림 | 한유진">
-      <Desc fw={700}>즐거운 기부 문화 확산을 위한 목소리 스페이스.</Desc>
+      <Desc fw={700}>즐거운 기부 문화 확산을 위한 목소리 스페이스</Desc>
       <Desc fw={400}>
         목소리는 진실된 감정을 담고 있으며 아무런 준비물이 필요 없다. 그렇기
         때문에 목소리를 여과했을 때 가장 진정성 있고 부담없는 기부가 실현될 수
-        있다고 생각한다. 우리는 목소리가 지닌 무한한 가능성으로, 자기 본연의
-        즐거움과 사회적 기여까지 이룰 수 있는 공간을 제시하고자 한다.
+        있다고 생각한다.
+        <br /> 우리는 목소리가 지닌 무한한 가능성으로, 자기 본연의 즐거움과
+        사회적 기여까지 이룰 수 있는 공간을 제시하고자 한다.
       </Desc>
       <Video
         style={{ marginTop: "4rem" }}
@@ -35,8 +37,12 @@ export default () => {
       <Zoom margin="0">
         <Image src={src3} />
       </Zoom>
+      <Zoom margin="0">
+        <Image src={src4_1} />
+      </Zoom>
       <Gif name="boxTeam54" />
       <Gif name="boxTeam55" />
+      <Gif name="boxTeam56" />
       <Zoom margin="0">
         <Image src={src6} />
       </Zoom>

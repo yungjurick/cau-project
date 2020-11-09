@@ -8,6 +8,7 @@ import src2 from "../../../static/images/projects/frame/team7/2.jpg";
 import src3 from "../../../static/images/projects/frame/team7/3.jpg";
 import src4 from "../../../static/images/projects/frame/team7/4.jpg";
 import src5 from "../../../static/images/projects/frame/team7/5.jpg";
+import src6 from "../../../static/images/projects/frame/team7/6.jpg";
 
 export default () => {
   return (
@@ -42,6 +43,9 @@ export default () => {
 
       <Zoom margin="0">
         <Image src={src5} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src6} />
       </Zoom>
     </ProjectLayout>
   );

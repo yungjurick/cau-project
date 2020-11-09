@@ -4,23 +4,22 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src0 from "../../../static/images/projects/frame/team5/0.png";
-import src1 from "../../../static/images/projects/frame/team5/1.png";
-import src2 from "../../../static/images/projects/frame/team5/2.png";
-import src3 from "../../../static/images/projects/frame/team5/3.png";
-import src4 from "../../../static/images/projects/frame/team5/4.png";
-import src5 from "../../../static/images/projects/frame/team5/5.png";
-import src6 from "../../../static/images/projects/frame/team5/6.png";
-import src7 from "../../../static/images/projects/frame/team5/7.png";
-import src8 from "../../../static/images/projects/frame/team5/8.png";
-import src9 from "../../../static/images/projects/frame/team5/9.png";
-import src10 from "../../../static/images/projects/frame/team5/10.png";
-import src11 from "../../../static/images/projects/frame/team5/11.png";
-import src12 from "../../../static/images/projects/frame/team5/12.png";
-import src13 from "../../../static/images/projects/frame/team5/13.png";
-import src14 from "../../../static/images/projects/frame/team5/14.png";
-import src15 from "../../../static/images/projects/frame/team5/15.png";
-import src16 from "../../../static/images/projects/frame/team5/16.png";
+import src0 from "../../../static/images/projects/frame/team5/0.jpg";
+import src1 from "../../../static/images/projects/frame/team5/1.jpg";
+import src2 from "../../../static/images/projects/frame/team5/2.jpg";
+import src3 from "../../../static/images/projects/frame/team5/3.jpg";
+import src4 from "../../../static/images/projects/frame/team5/4.jpg";
+import src5 from "../../../static/images/projects/frame/team5/5.jpg";
+import src6 from "../../../static/images/projects/frame/team5/6.jpg";
+import src7 from "../../../static/images/projects/frame/team5/7.jpg";
+import src8 from "../../../static/images/projects/frame/team5/8.jpg";
+import src9 from "../../../static/images/projects/frame/team5/9.jpg";
+import src10 from "../../../static/images/projects/frame/team5/10.jpg";
+import src11 from "../../../static/images/projects/frame/team5/11.jpg";
+import src12 from "../../../static/images/projects/frame/team5/12.jpg";
+import src13 from "../../../static/images/projects/frame/team5/13.jpg";
+import src14 from "../../../static/images/projects/frame/team5/14.jpg";
+import src15 from "../../../static/images/projects/frame/team5/15.jpg";
 
 export default () => {
   return (
@@ -103,10 +102,6 @@ export default () => {
 
       <Zoom margin="0">
         <Image src={src15} />
-      </Zoom>
-
-      <Zoom margin="0">
-        <Image src={src16} />
       </Zoom>
     </ProjectLayout>
   );

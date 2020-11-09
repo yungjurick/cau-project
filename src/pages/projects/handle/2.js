@@ -6,6 +6,15 @@ import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/handle/team2/1.png";
 import src2 from "../../../static/images/projects/handle/team2/2.png";
+import src3 from "../../../static/images/projects/handle/team2/3.png";
+import src4 from "../../../static/images/projects/handle/team2/4.png";
+import src5 from "../../../static/images/projects/handle/team2/5.png";
+import src6 from "../../../static/images/projects/handle/team2/6.png";
+import src7 from "../../../static/images/projects/handle/team2/7.png";
+import src8 from "../../../static/images/projects/handle/team2/8.png";
+import src9 from "../../../static/images/projects/handle/team2/9.png";
+import src10 from "../../../static/images/projects/handle/team2/10.png";
+import src11 from "../../../static/images/projects/handle/team2/11.png";
 
 export default () => {
   return (
@@ -21,12 +30,40 @@ export default () => {
         소비문화에 대한 새로운 라이프스타일과 트렌드를 자연스럽게 소개하고
         창출하는 공간으로서의 역할을 다 할 수 있도록 디자인하였다.
       </Desc>
-      <WrapForTeam top="8%" src="https://www.youtube.com/embed/kyrUe9C9n1Q">
-        <Zoom>
+      <div style={{ marginTop: "4rem" }}></div>
+      <WrapForTeam top="8.5%" src="https://www.youtube.com/embed/kyrUe9C9n1Q">
+        <Zoom margin="0">
           <Image src={src1} />
         </Zoom>
-        <Zoom>
+        <Zoom margin="0">
           <Image src={src2} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src3} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src4} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src5} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src6} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src7} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src8} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src9} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src10} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src11} />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

@@ -18,7 +18,7 @@ import src10 from "../../../static/images/projects/handle/team7/10.jpg";
 import src11 from "../../../static/images/projects/handle/team7/11.jpg";
 import src12 from "../../../static/images/projects/handle/team7/12.jpg";
 import src13 from "../../../static/images/projects/handle/team7/13.jpg";
-import src16 from "../../../static/images/projects/handle/team7/16.jpg";
+import src15 from "../../../static/images/projects/handle/team7/15.jpg";
 
 export default () => {
   return (
@@ -98,7 +98,7 @@ export default () => {
         <Gif name="handleTeam7" />
 
         <Zoom margin="0">
-          <Image src={src16} />
+          <Image src={src15} />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

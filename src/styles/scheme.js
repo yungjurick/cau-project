@@ -27,4 +27,4 @@ export const BREAK_POINTS = {
 
 export const FONT_FAMILY = `Helvetica33, -apple-system, "system-ui", BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif`;
 
-export const FONT_FAMILY_GOTHIC = `MGothic, gothic, -apple-system, "system-ui", BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif`;
+export const FONT_FAMILY_GOTHIC = `Noto Sans KR, -apple-system, "system-ui", BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif`;

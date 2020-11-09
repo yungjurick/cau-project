@@ -16,6 +16,7 @@ const P = styled.p`
   }
   font-family: ${props => (props.gothic ? FONT_FAMILY_GOTHIC : FONT_FAMILY)};
   font-size: 14px;
+  text-align: justify;
   line-height: 1.8;
   word-break: keep-all;
   color: #000;

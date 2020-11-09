@@ -24,12 +24,12 @@ export default () => {
         사람으로 발전됨을 기약한다.
       </Desc>
       <Zoom margin="4rem 0 0 0">
+        <Image src={src2} />
+      </Zoom>
+      <Zoom margin="4rem 0 0 0">
         <Image src={src1} />
       </Zoom>
 
-      <Zoom margin="4rem 0 0 0">
-        <Image src={src2} />
-      </Zoom>
     </ProjectLayout>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import src1 from "../static/images/handle/team3/1.gif";
-import src3 from "../static/images/handle/team3/3.gif";
-import src5 from "../static/images/handle/team3/5.gif";
-import src6 from "../static/images/handle/team3/6.gif";
+import src1 from "../static/images/handle/team3/01.gif";
+import src4 from "../static/images/handle/team3/04.gif";
+import src14 from "../static/images/handle/team3/14.gif";
+import src15 from "../static/images/handle/team3/15.gif";
 import team4src1 from "../static/images/handle/team4/1.gif";
 import team4src6 from "../static/images/handle/team4/6.gif";
 import team4src8 from "../static/images/handle/team4/8.gif";
@@ -16,6 +16,7 @@ import boxTeam1Src1 from "../static/images/box/team1/5.gif";
 import boxTeam52 from "../static/images/box/team5/2.gif";
 import boxTeam54 from "../static/images/box/team5/4.gif";
 import boxTeam55 from "../static/images/box/team5/5.gif";
+import boxTeam56 from "../static/images/box/team5/6.gif";
 import boxTeam57 from "../static/images/box/team5/7.gif";
 import boxTeam58 from "../static/images/box/team5/8.gif";
 import boxTeam510 from "../static/images/box/team5/10.gif";
@@ -27,9 +28,9 @@ import frameTeam52 from "../static/images/frame/team5/m2.gif";
 
 const sources = {
   handleTeam3One: src1,
-  handleTeam3Three: src3,
-  handleTeam3Five: src5,
-  handleTeam3Six: src6,
+  handleTeam3Three: src4,
+  handleTeam3Five: src14,
+  handleTeam3Six: src15,
   handleTeam4One: team4src1,
   handleTeam4Six: team4src6,
   handleTeam4Eight: team4src8,
@@ -42,6 +43,7 @@ const sources = {
   boxTeam52,
   boxTeam54,
   boxTeam55,
+  boxTeam56,
   boxTeam57,
   boxTeam58,
   boxTeam510,

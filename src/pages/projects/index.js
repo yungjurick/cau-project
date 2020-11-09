@@ -6,6 +6,7 @@ import SEO from "../../components/seo";
 import { laptopAbove, tabletAbove } from "../../styles/mediaQuery";
 import { graphql, Link, navigate, useStaticQuery } from "gatsby";
 import { useState } from "react";
+import { FONT_FAMILY_GOTHIC } from "../../styles/scheme";
 
 // 8, 15, 7
 export default function ProjectsPage() {

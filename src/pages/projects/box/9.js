@@ -5,7 +5,15 @@ import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/box/team9/1.jpg";
 import src2 from "../../../static/images/projects/box/team9/2.jpg";
-
+import src3 from "../../../static/images/projects/box/team9/3.jpg";
+import src4 from "../../../static/images/projects/box/team9/4.jpg";
+import src5 from "../../../static/images/projects/box/team9/5.jpg";
+import src6 from "../../../static/images/projects/box/team9/6.jpg";
+import src7 from "../../../static/images/projects/box/team9/7.jpg";
+import src8 from "../../../static/images/projects/box/team9/8.jpg";
+import src9 from "../../../static/images/projects/box/team9/9.jpg";
+import src10 from "../../../static/images/projects/box/team9/10.jpg";
+import src11 from "../../../static/images/projects/box/team9/11.jpg";
 
 export default () => {
   return (
@@ -36,6 +44,33 @@ export default () => {
 
       <Zoom margin="0">
         <Image src={src2} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src3} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src4} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src5} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src6} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src7} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src8} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src9} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src10} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src11} />
       </Zoom>
     </ProjectLayout>
   );
