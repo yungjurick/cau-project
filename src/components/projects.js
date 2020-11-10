@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 
 import { Link } from "gatsby";
-import { mobileLAbove } from "../styles/mediaQuery";
+import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
 import { FONT_FAMILY_GOTHIC } from "../styles/scheme";
 
 export default function Projects({ projects = [] }) {
@@ -77,7 +77,6 @@ const AbsoluteLink = styled(Link)`
       left: 0;
       right: 0;
       font-weight: 300;
-      font-size: 16px;
     }
     ::before {
       text-align: center;
@@ -100,15 +99,22 @@ const AbsoluteLink = styled(Link)`
     margin: auto;
     color: #fff;
     font-family: ${FONT_FAMILY_GOTHIC};
-    font-size: 1.6rem;
   }
   :after {
     content: none;
     bottom: 5%;
+    font-size: 12px;
+    ${tabletAbove`
+      font-size: 16px;
+    `}
   }
   ::before {
     content: none;
     bottom: 4%;
     border-bottom: 2px solid #fff;
+    font-size: 16px;
+    ${tabletAbove`
+      font-size: 1.6rem;
+    `}
   }
 `;

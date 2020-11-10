@@ -127,7 +127,6 @@ const Menu = styled(Link)`
   color: ${COLORS.primary};
   letter-spacing: 1.2px;
   &.active {
-    font-weight: 700;
     background: linear-gradient(
         to right,
         #fff 2%,
@@ -144,7 +143,6 @@ const Menu = styled(Link)`
       );
   }
   &:hover {
-    font-weight: 700;
     background: linear-gradient(
         to right,
         #fff 2%,
