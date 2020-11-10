@@ -6,11 +6,10 @@ const CheckTime = () => {
     // 개발 중 시연을 위해 isDevMode = true로 설정
     // 배포 시 반드시 false로 변경
     // open 예정일 이후에는 해당 코드 삭제해도 무관함
-    const isDevMode = true;
+    const isDevMode = false;
     if (isDevMode) return;
     const now = Date.now();
     const openTime = new Date(2020,10,11,00,00,00).getTime();
-    // const openTime = new Date(2020,09,12,16,09,00).getTime();
     const isPreOpen = now < openTime;
     // 오픈 예정일 이전에 사이트 접속할 경우 /pre-open으로 라우팅
     if (!window.location.pathname.match(/(pre-open)/gi) && isPreOpen) {
