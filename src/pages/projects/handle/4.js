@@ -8,7 +8,8 @@ import src2 from "../../../static/images/projects/handle/team4/2.jpg";
 import src3 from "../../../static/images/projects/handle/team4/4.jpg";
 import src4 from "../../../static/images/projects/handle/team4/7.jpg";
 import src5 from "../../../static/images/projects/handle/team4/9.jpg";
-import src6 from "../../../static/images/projects/handle/team4/10.jpg";
+import src6_1 from "../../../static/images/projects/handle/team4/10_1.jpg";
+import src6_2 from "../../../static/images/projects/handle/team4/10_2.jpg";
 import src7 from "../../../static/images/projects/handle/team4/12.jpg";
 import src8 from "../../../static/images/projects/handle/team4/13.jpg";
 import Video from "../../../components/video";
@@ -51,7 +52,10 @@ export default () => {
         <Image src={src5} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src6} />
+        <Image src={src6_1} />
+      </Zoom>
+      <Zoom margin="0">
+        <Image src={src6_2} />
       </Zoom>
       <Gif name="handleTeam4Eleven" />
       <Zoom margin="0">

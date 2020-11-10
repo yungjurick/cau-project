@@ -6,6 +6,8 @@ import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
 import src1 from "../../../static/images/projects/handle/team5/1.jpg";
 import src2 from "../../../static/images/projects/handle/team5/2.jpg";
+import src3 from "../../../static/images/projects/handle/team5/3.jpg";
+import src4 from "../../../static/images/projects/handle/team5/4.jpg";
 
 export default () => {
   return (
@@ -34,6 +36,12 @@ export default () => {
 
         <Zoom margin="0">
           <Image src={src2} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src3} />
+        </Zoom>
+        <Zoom margin="0">
+          <Image src={src4} />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>
