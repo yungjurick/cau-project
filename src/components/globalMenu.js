@@ -10,6 +10,7 @@ import AccordionMenu from "./accordion";
 import { COLORS } from "../styles/scheme";
 import { projectInfo } from "../config/projects";
 import { map, flat, values, go, filter } from "fxjs";
+import timesSrc from "../static/images/times.png";
 
 export default function GlobalMenu() {
   const [isActive, setIsActive] = useState(false);
@@ -98,7 +99,7 @@ export default function GlobalMenu() {
       <Menu className="g_menu">
         <Sticky>
           <Top>
-            <CloseButton icon={closeIcon} onClick={deactivateMenu} />
+            <CloseButton icon={timesSrc} onClick={deactivateMenu} />
           </Top>
           <MenuInner>
             <AccordionMenu keys={["handle", "box", "frame"]} />
@@ -230,7 +231,7 @@ const CloseButton = styled.button`
   cursor: pointer;
   margin-bottom: 1rem;
   background-color: transparent;
-  background-size: contain;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-image: url(${props => props.icon});
 `;

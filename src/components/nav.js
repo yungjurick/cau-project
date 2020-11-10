@@ -19,21 +19,21 @@ export default function Nav({ noNav }) {
         </LogoCover>
         <Menus left>
           <Menu
-            style={{ left: "30px" }}
+            style={{ left: "40px" }}
             to="/projects/handle/"
             activeClassName="active"
           >
             Handle
           </Menu>
           <Menu
-            style={{ left: "120px" }}
+            style={{ left: "122px" }}
             to="/projects/box/"
             activeClassName="active"
           >
             Box
           </Menu>
           <Menu
-            style={{ left: "180px" }}
+            style={{ left: "176px" }}
             to="/projects/frame/"
             activeClassName="active"
           >
@@ -41,7 +41,7 @@ export default function Nav({ noNav }) {
           </Menu>
         </Menus>
         <Menus right>
-          <Menu style={{ right: "90px" }} to="/guest/" activeClassName="active">
+          <Menu style={{ right: "86px" }} to="/guest/" activeClassName="active">
             Guest
           </Menu>
           <Menu style={{ right: "16px" }} to="/about/" activeClassName="active">
