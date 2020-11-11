@@ -22,7 +22,14 @@ const CheckTime = () => {
   return <script dangerouslySetInnerHTML={{ __html: fnCode }}></script>;
 };
 
-export const onRenderBody = ({ setPreBodyComponents }) => {
+export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
+  setHeadComponents([
+    <link
+      key={`ssr_head_link`}
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />,
+  ]);
   setPreBodyComponents(<CheckTime key={`ssr_check_date`} />);
 };
 
