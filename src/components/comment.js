@@ -14,10 +14,10 @@ export default function Comment({ id, content, to, from, password }) {
     const countSnapshot = await countRef.get();
     const countDoc = countSnapshot.docs[0];
 
-    const id = countDoc.id;
+    const countId = countDoc.id;
     const count = countDoc.data().count;
 
-    countRef.doc(id).update({ count: count - 1 });
+    countRef.doc(countId).update({ count: count - 1 });
     firestore.collection("comments").doc(id).delete();
   }
 
