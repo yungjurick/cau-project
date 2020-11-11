@@ -19,6 +19,7 @@ import src12 from "../../../static/images/projects/box/team6/12.png";
 import src13 from "../../../static/images/projects/box/team6/13.png";
 import src14 from "../../../static/images/projects/box/team6/14.png";
 import src15 from "../../../static/images/projects/box/team6/15.png";
+import Video from "../../../components/video";
 
 export default () => {
   return (
@@ -50,8 +51,8 @@ export default () => {
 
       <WrapForTeam
         margin="0"
-        top="46.2%"
-        src="https://www.youtube.com/embed/1xqjHOOweao"
+        top="43.2%"
+        src="https://www.youtube.com/embed/XIRKEGXqC0A"
       >
         <Zoom margin="4rem 0 0 0">
           <Image src={src1} />
@@ -112,6 +113,8 @@ export default () => {
         <Zoom margin="0">
           <Image src={src15} />
         </Zoom>
+
+        <Video src="https://www.youtube.com/embed/NUCokiS_Vxs" />
       </WrapForTeam>
     </ProjectLayout>
   );
