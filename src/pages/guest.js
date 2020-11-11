@@ -44,8 +44,8 @@ export default function GuestPage() {
       );
 
       setComments(guestComments);
-      return () => cleanUp();
     });
+    return () => cleanUp();
   }, []);
 
   const handleChangeTo = ([{ value }]) => {
