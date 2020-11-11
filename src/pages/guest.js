@@ -35,7 +35,7 @@ export default function GuestPage() {
   const [currentTo, setCurrentTo] = useState();
 
   useEffect(() => {
-    firestore.collection("comments").onSnapshot(({ docs }) => {
+    const cleanUp = firestore.collection("comments").onSnapshot(({ docs }) => {
       const guestComments = go(
         docs,
         mapL(doc => ({ id: doc.id, ...doc.data() })),
@@ -44,6 +44,7 @@ export default function GuestPage() {
       );
 
       setComments(guestComments);
+      return () => cleanUp();
     });
   }, []);
 
