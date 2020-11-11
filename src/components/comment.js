@@ -118,7 +118,6 @@ const Content = styled.p`
   line-height: 1.4;
   font-size: 1rem;
   flex-basis: 100%;
-  word-break: keep-all;
   font-weight: 700;
   color: ${COLORS.primary};
 `;
