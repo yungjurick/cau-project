@@ -78,8 +78,6 @@ const IndexPage = () => {
       const rightPos = window.innerWidth;
       const bottomPos = window.innerHeight - 7;
 
-      // console.log(bottomPos, bottom, bottomPos % gridSize);
-
       if (rightPos % gridSize < gridSize) {
         setRight((rightPos % gridSize) + gridSize);
       }

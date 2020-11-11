@@ -24,9 +24,11 @@ import {
   match,
   not,
   sortBy,
+  omit,
   identity,
 } from "fxjs";
 
+const isDev = process.env.NODE_ENV === "development";
 
 export const COMMENTS_HEAD = "COMMENTS_HEAD";
 export const COMMENTS = "COMMENTS";
@@ -54,19 +56,27 @@ export default function GuestPage() {
       .get();
 
     const currentHead = snapShotHead.docs[0].id;
-    console.log({ cachedHead, currentHead });
-    console.log({ comments_count_from_cache, comments_count_from_server });
+
+    if (isDev) {
+      console.log({ cachedHead, currentHead });
+      console.log({ comments_count_from_cache, comments_count_from_server });
+    }
+
     if (
       cachedHead === currentHead &&
       comments_count_from_cache === comments_count_from_server
     ) {
       // no need to fetch
-      console.log("FROM CACHE");
+      if (isDev) {
+        console.log("FROM CACHE");
+      }
       const commentsStr = window.localStorage.getItem(COMMENTS);
       const parsedComments = JSON.parse(commentsStr);
       setComments(parsedComments);
     } else {
-      console.log("FROM SERVER");
+      if (isDev) {
+        console.log("FROM SERVER");
+      }
       const snapshot = await commentsRef.orderBy("time", "desc").get();
       const guestComments = go(
         snapshot.docs,
@@ -75,8 +85,11 @@ export default function GuestPage() {
       );
       window.localStorage.setItem(COMMENTS_HEAD, currentHead);
       window.localStorage.setItem(COMMENTS_COUNT, guestComments.length);
+      window.localStorage.setItem(
+        COMMENTS,
+        JSON.stringify(guestComments.map(omit("password")))
+      );
       setComments(guestComments);
-      window.localStorage.setItem(COMMENTS, JSON.stringify(guestComments));
     }
   }
 

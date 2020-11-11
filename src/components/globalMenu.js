@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
-import closeIcon from "../static/images/times-solid.svg";
 import Img from "gatsby-image";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import searchIconSrc from "../static/images/search-solid.svg";

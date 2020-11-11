@@ -66,7 +66,7 @@ export function Form({ handleFilter, handleAddComments }) {
       .collection("comments")
       .add(data)
       .then(onSuccess(data))
-      .catch(err => console.log(err));
+      .catch(err => console.error(err));
   }
 
   const onSubmit = e => {
