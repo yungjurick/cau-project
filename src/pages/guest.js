@@ -12,7 +12,6 @@ import { COLORS, FONT_FAMILY_GOTHIC, SIZES } from "../styles/scheme";
 import Select from "react-dropdown-select";
 import { projectInfo } from "../config/projects";
 import {
-  sortByDesc,
   map,
   values,
   sel,
@@ -28,24 +27,61 @@ import {
   identity,
 } from "fxjs";
 
-const sortByTime = sortByDesc(sel("time"));
+
+export const COMMENTS_HEAD = "COMMENTS_HEAD";
+export const COMMENTS = "COMMENTS";
+export const COMMENTS_COUNT = "COMMENTS_COUNT";
 
 export default function GuestPage() {
   const [comments, setComments] = useState();
   const [currentTo, setCurrentTo] = useState();
 
-  useEffect(() => {
+  async function fetchComments() {
     const commentsRef = firestore.collection("comments");
-    commentsRef.get().then(({ docs }) => {
+    const countRef = firestore.collection("count");
+
+    const countSnapshot = await countRef.get();
+    const comments_count_from_server = countSnapshot.docs[0].data().count;
+    let comments_count_from_cache = window.localStorage.getItem(COMMENTS_COUNT);
+    comments_count_from_cache = isNaN(comments_count_from_cache)
+      ? 0
+      : +comments_count_from_cache;
+
+    const cachedHead = window.localStorage.getItem(COMMENTS_HEAD);
+    const snapShotHead = await commentsRef
+      .orderBy("time", "desc")
+      .limit(1)
+      .get();
+
+    const currentHead = snapShotHead.docs[0].id;
+    console.log({ cachedHead, currentHead });
+    console.log({ comments_count_from_cache, comments_count_from_server });
+    if (
+      cachedHead === currentHead &&
+      comments_count_from_cache === comments_count_from_server
+    ) {
+      // no need to fetch
+      console.log("FROM CACHE");
+      const commentsStr = window.localStorage.getItem(COMMENTS);
+      const parsedComments = JSON.parse(commentsStr);
+      setComments(parsedComments);
+    } else {
+      console.log("FROM SERVER");
+      const snapshot = await commentsRef.orderBy("time", "desc").get();
       const guestComments = go(
-        docs,
+        snapshot.docs,
         mapL(doc => ({ id: doc.id, ...doc.data() })),
-        sortByTime,
         takeAll
       );
-      console.log(guestComments);
+      window.localStorage.setItem(COMMENTS_HEAD, currentHead);
+      window.localStorage.setItem(COMMENTS_COUNT, guestComments.length);
       setComments(guestComments);
-    });
+      window.localStorage.setItem(COMMENTS, JSON.stringify(guestComments));
+    }
+  }
+
+  useEffect(() => {
+    fetchComments();
   }, []);
 
   const handleChangeTo = ([{ value }]) => {

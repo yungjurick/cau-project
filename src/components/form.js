@@ -45,8 +45,14 @@ export function Form({ handleFilter, handleAddComments }) {
   const isButtonAbled = () =>
     [password, content].map(checkStr).reduce((b1, b2) => b1 && b2, true);
 
-  const onSubmit = e => {
-    e.preventDefault();
+  async function update() {
+    const countRef = firestore.collection("count");
+    const countSnapshot = await countRef.get();
+    const countDoc = countSnapshot.docs[0];
+
+    const id = countDoc.id;
+    const count = countDoc.data().count;
+
     if (!isButtonAbled) return;
     let data = {
       to: currentTo || "모두",
@@ -55,11 +61,17 @@ export function Form({ handleFilter, handleAddComments }) {
       content,
       time: new Date(),
     };
+    countRef.doc(id).update({ count: count + 1 });
     firestore
       .collection("comments")
       .add(data)
       .then(onSuccess(data))
       .catch(err => console.log(err));
+  }
+
+  const onSubmit = e => {
+    e.preventDefault();
+    update();
   };
 
   return (

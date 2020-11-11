@@ -8,11 +8,24 @@ import { COLORS } from "../styles/scheme";
 
 export default function Comment({ id, content, to, from, password }) {
   const commentsRef = useRef();
+
+  async function remove() {
+    const countRef = firestore.collection("count");
+    const countSnapshot = await countRef.get();
+    const countDoc = countSnapshot.docs[0];
+
+    const id = countDoc.id;
+    const count = countDoc.data().count;
+
+    countRef.doc(id).update({ count: count - 1 });
+    firestore.collection("comments").doc(id).delete();
+  }
+
   const onDelete = () => {
     const pwd = window.prompt("비밀번호를 입력해주세요");
     if (pwd === password) {
-      firestore.collection("comments").doc(id).delete();
-      document.querySelector(`#${id}`).remove()
+      remove();
+      document.querySelector(`#${id}`).remove();
     } else if (!pwd) {
       return;
     } else {
@@ -83,7 +96,6 @@ const Delete = styled.button`
   `}
 `;
 
-
 const To = styled.p`
   font-size: 1rem;
   color: ${COLORS.primary};
@@ -113,7 +125,6 @@ const From = styled.p`
     min-width: 100px;
   `}
 `;
-
 
 const Content = styled.p`
   margin-right: auto;
