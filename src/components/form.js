@@ -13,7 +13,7 @@ const checkStr = str => {
   return true;
 };
 
-export function Form({ handleFilter }) {
+export function Form({ handleFilter, handleAddComments }) {
   const [content, setContent] = useState("");
   const [from, setFrom] = useState("");
   const [password, setPassword] = useState("");
@@ -31,11 +31,11 @@ export function Form({ handleFilter }) {
   };
 
   const handleChangeTo = ([{ value }]) => {
-    console.log(value);
     setCurrentTo(value);
   };
 
-  const onSuccess = () => {
+  const onSuccess = data => ({ id }) => {
+    handleAddComments({ ...data, id });
     handleFilter([{ value: null }]);
     setContent("");
     setFrom("");
@@ -48,16 +48,17 @@ export function Form({ handleFilter }) {
   const onSubmit = e => {
     e.preventDefault();
     if (!isButtonAbled) return;
+    let data = {
+      to: currentTo || "모두",
+      from: from || "익명",
+      password,
+      content,
+      time: new Date(),
+    };
     firestore
       .collection("comments")
-      .add({
-        to: currentTo || "모두",
-        from: from || "익명",
-        password,
-        content,
-        time: new Date(),
-      })
-      .then(onSuccess)
+      .add(data)
+      .then(onSuccess(data))
       .catch(err => console.log(err));
   };
 

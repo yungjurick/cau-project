@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { firestore } from "../../firebase";
 // import { format } from "date-fns";
@@ -7,10 +7,12 @@ import { mobileLAbove } from "../styles/mediaQuery";
 import { COLORS } from "../styles/scheme";
 
 export default function Comment({ id, content, to, from, password }) {
+  const commentsRef = useRef();
   const onDelete = () => {
     const pwd = window.prompt("비밀번호를 입력해주세요");
     if (pwd === password) {
       firestore.collection("comments").doc(id).delete();
+      document.querySelector(`#${id}`).remove()
     } else if (!pwd) {
       return;
     } else {
@@ -19,7 +21,7 @@ export default function Comment({ id, content, to, from, password }) {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id={id} ref={commentsRef}>
       <Inner>
         <To className="gothic">To. {to}</To>
         <Content className="gothic">{content}</Content>

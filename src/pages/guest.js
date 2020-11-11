@@ -35,21 +35,25 @@ export default function GuestPage() {
   const [currentTo, setCurrentTo] = useState();
 
   useEffect(() => {
-    const cleanUp = firestore.collection("comments").onSnapshot(({ docs }) => {
+    const commentsRef = firestore.collection("comments");
+    commentsRef.get().then(({ docs }) => {
       const guestComments = go(
         docs,
         mapL(doc => ({ id: doc.id, ...doc.data() })),
         sortByTime,
         takeAll
       );
-
+      console.log(guestComments);
       setComments(guestComments);
     });
-    return () => cleanUp();
   }, []);
 
   const handleChangeTo = ([{ value }]) => {
     setCurrentTo(value);
+  };
+
+  const handleAddComments = data => {
+    setComments([data, ...comments]);
   };
 
   if (!comments) return <Loading />;
@@ -81,7 +85,10 @@ export default function GuestPage() {
             ]}
             onChange={handleChangeTo}
           />
-          <Form handleFilter={handleChangeTo} />
+          <Form
+            handleFilter={handleChangeTo}
+            handleAddComments={handleAddComments}
+          />
           <Wrapper>
             {comments.length < 1 ? (
               <NoComments />
