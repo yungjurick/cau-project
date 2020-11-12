@@ -94,7 +94,7 @@ export default function GuestPage() {
   }
 
   useEffect(() => {
-    fetchComments();
+    // fetchComments();
   }, []);
 
   const handleChangeTo = ([{ value }]) => {
@@ -105,6 +105,13 @@ export default function GuestPage() {
     setComments([data, ...comments]);
   };
 
+  return (
+    <Layout>
+      <Container>
+        <h3 style={{ textAlign: "center" }}>내부수리중</h3>
+      </Container>
+    </Layout>
+  );
   if (!comments) return <Loading />;
 
   return (
