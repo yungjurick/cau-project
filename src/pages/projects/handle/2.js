@@ -4,17 +4,6 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/handle/team2/1.png";
-import src2 from "../../../static/images/projects/handle/team2/2.png";
-import src3 from "../../../static/images/projects/handle/team2/3.png";
-import src4 from "../../../static/images/projects/handle/team2/4.png";
-import src5 from "../../../static/images/projects/handle/team2/5.png";
-import src6 from "../../../static/images/projects/handle/team2/6.png";
-import src7 from "../../../static/images/projects/handle/team2/7.png";
-import src8 from "../../../static/images/projects/handle/team2/8.png";
-import src9 from "../../../static/images/projects/handle/team2/9.png";
-import src10 from "../../../static/images/projects/handle/team2/10.png";
-import src11 from "../../../static/images/projects/handle/team2/11.png";
 
 export default () => {
   return (
@@ -33,37 +22,37 @@ export default () => {
       <div style={{ marginTop: "4rem" }}></div>
       <WrapForTeam top="8.5%" src="https://www.youtube.com/embed/kyrUe9C9n1Q">
         <Zoom margin="0">
-          <Image src={src1} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F1.png?alt=media&token=2b418ca9-bbbb-470a-8101-dc704f1f19aa" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src2} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F2.png?alt=media&token=9543061f-7d00-4321-ad35-7b2f3e5f7651" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src3} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F3.png?alt=media&token=1b674cf9-0a1d-4866-904d-2eacd7f6e330" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src4} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F4.png?alt=media&token=2ff3cbb7-edc9-40e3-9ef6-9616246fec69" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src5} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F5.png?alt=media&token=838d62d9-3ecf-48d7-aa3a-71c480131fbd" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src6} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F6.png?alt=media&token=b68339fd-8a9d-4c07-82ca-3cabec3969d2" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src7} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F7.png?alt=media&token=68679bdf-206f-4b8c-84e6-444515605b18" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src8} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F8.png?alt=media&token=874b7281-3f85-41d8-8a18-988d38926711" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src9} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F9.png?alt=media&token=eb2d8279-6cd3-43ea-aa45-b156ab060a72" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src10} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F10.png?alt=media&token=e292afdf-940d-43d5-8bcd-e3b11320cff5" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src11} />
+          <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam2%2F11.png?alt=media&token=ad5842aa-c5b0-4ddc-82eb-931029dc6ba6" />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

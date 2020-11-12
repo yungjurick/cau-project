@@ -4,7 +4,7 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Video from "../../../components/video";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/handle/team1/flex_us.jpg";
+// import src1 from "../../../static/images/projects/handle/team1/flex_us.jpg";
 
 export default () => {
   return (
@@ -24,7 +24,7 @@ export default () => {
         청년들의 공간과 시간 그리고 생각들이 이 프로젝트에 담겨있다.
       </Desc>
       <Zoom>
-        <Image src={src1} />
+        <Image src="https://firebasestorage.googleapis.com/v0/b/ca01-3120a.appspot.com/o/handle%2Fteam1%2Fflex_us.jpg?alt=media&token=cf9c5471-b5cd-4d6c-b33b-eff001dae8c9" />
       </Zoom>
       <Video src="https://youtube.com/embed/jWNx_b73Xlk" />
     </ProjectLayout>

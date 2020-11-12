@@ -27,6 +27,7 @@ export default function ProjectLayout({ title, names, children }) {
     }
   };
   useEffect(() => {
+    document.addEventListener("contextmenu", event => event.preventDefault());
     window.addEventListener("mousemove", handleMouseEvent);
     return () => window.removeEventListener("mousemove", handleMouseEvent);
   }, []);
