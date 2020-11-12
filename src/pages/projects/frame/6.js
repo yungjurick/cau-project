@@ -3,20 +3,10 @@ import styled from "styled-components";
 import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/frame/team6/1.jpg";
-import src2 from "../../../static/images/projects/frame/team6/1.png";
-import src3 from "../../../static/images/projects/frame/team6/2.png";
-import src4 from "../../../static/images/projects/frame/team6/3.png";
-import src5 from "../../../static/images/projects/frame/team6/4.png";
-import src6 from "../../../static/images/projects/frame/team6/5.png";
-import src7 from "../../../static/images/projects/frame/team6/6.png";
-import src8 from "../../../static/images/projects/frame/team6/7.png";
-import src9 from "../../../static/images/projects/frame/team6/8.png";
-import src10 from "../../../static/images/projects/frame/team6/9.png";
-import src11 from "../../../static/images/projects/frame/team6/10.png";
-import src12 from "../../../static/images/projects/frame/team6/11.png";
-
 import Video from "../../../components/video";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/frame/team6";
 
 export default () => {
   return (
@@ -31,7 +21,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="4rem 0 0 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
 
       <Video
@@ -40,42 +30,42 @@ export default () => {
       />
 
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src={`${CDN}/1.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src={`${CDN}/2.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src4} />
+        <Image src={`${CDN}/3.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src5} />
+        <Image src={`${CDN}/4.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src6} />
+        <Image src={`${CDN}/5.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src7} />
+        <Image src={`${CDN}/6.png`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src8} />
+        <Image src={`${CDN}/7.png`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src9} />
+        <Image src={`${CDN}/8.png`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src10} />
+        <Image src={`${CDN}/9.png`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src11} />
+        <Image src={`${CDN}/10.png`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src12} />
+        <Image src={`${CDN}/11.png`} />
       </Zoom>
     </ProjectLayout>
   );

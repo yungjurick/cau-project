@@ -4,15 +4,9 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src2 from "../../../static/images/projects/box/team7/2.png";
-import src3 from "../../../static/images/projects/box/team7/3.png";
-import src4 from "../../../static/images/projects/box/team7/4.png";
-import src5 from "../../../static/images/projects/box/team7/5.png";
-import src6 from "../../../static/images/projects/box/team7/6.png";
-import src7 from "../../../static/images/projects/box/team7/7.png";
-import src8 from "../../../static/images/projects/box/team7/8.png";
-import src9 from "../../../static/images/projects/box/team7/9.png";
-import src10 from "../../../static/images/projects/box/team7/10.png";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team7";
 
 export default () => {
   return (
@@ -29,10 +23,10 @@ export default () => {
 
       <div style={{ marginTop: "4rem" }} />
 
-      <Gif name="boxTeam71" />
+      <Gif src={`${CDN}/1.gif`} />
 
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src={`${CDN}/2.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -40,7 +34,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src={`${CDN}/3.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -48,7 +42,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src4} />
+        <Image src={`${CDN}/4.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -56,7 +50,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src5} />
+        <Image src={`${CDN}/5.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -64,7 +58,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src6} />
+        <Image src={`${CDN}/6.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -72,7 +66,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src7} />
+        <Image src={`${CDN}/7.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -80,7 +74,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src8} />
+        <Image src={`${CDN}/8.png`} />
       </Zoom>
 
       <Desc style={{ marginTop: "4rem", fontWeight: 700, fontSize: "18px" }}>
@@ -88,11 +82,11 @@ export default () => {
       </Desc>
 
       <Zoom margin="0">
-        <Image src={src9} />
+        <Image src={`${CDN}/9.png`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src10} />
+        <Image src={`${CDN}/10.png`} />
       </Zoom>
     </ProjectLayout>
   );

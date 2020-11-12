@@ -4,16 +4,11 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/box/team5/1.jpg";
-import src3 from "../../../static/images/projects/box/team5/3.jpg";
-import src4_1 from "../../../static/images/projects/box/team5/4_1.jpg";
-import src6 from "../../../static/images/projects/box/team5/6.jpg";
-import src9 from "../../../static/images/projects/box/team5/9.jpg";
-import src11 from "../../../static/images/projects/box/team5/11.jpg";
-import src13 from "../../../static/images/projects/box/team5/13.jpg";
-import src15 from "../../../static/images/projects/box/team5/15.jpg";
 
 import Video from "../../../components/video";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team5";
 
 export default () => {
   return (
@@ -31,37 +26,37 @@ export default () => {
         src="https://www.youtube.com/embed/AnteLIUMRDA"
       />
       <Zoom margin="4rem 0 0 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
-      <Gif name="boxTeam52" />
+      <Gif src={`${CDN}/2.gif`} />
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src={`${CDN}/3.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src4_1} />
+        <Image src={`${CDN}/4_1.jpg`} />
       </Zoom>
-      <Gif name="boxTeam54" />
-      <Gif name="boxTeam55" />
-      <Gif name="boxTeam56" />
+      <Gif src={`${CDN}/4.gif`} />
+      <Gif src={`${CDN}/5.gif`} />
+      <Gif src={`${CDN}/6.gif`} />
       <Zoom margin="0">
-        <Image src={src6} />
+        <Image src={`${CDN}/6.jpg`} />
       </Zoom>
-      <Gif name="boxTeam57" />
-      <Gif name="boxTeam58" />
+      <Gif src={`${CDN}/7.gif`} />
+      <Gif src={`${CDN}/8.gif`} />
       <Zoom margin="0">
-        <Image src={src9} />
+        <Image src={`${CDN}/9.jpg`} />
       </Zoom>
-      <Gif name="boxTeam510" />
+      <Gif src={`${CDN}/10.gif`} />
       <Zoom margin="0">
-        <Image src={src11} />
+        <Image src={`${CDN}/11.jpg`} />
       </Zoom>
-      <Gif name="boxTeam512" />
+      <Gif src={`${CDN}/12.gif`} />
       <Zoom margin="0">
-        <Image src={src13} />
+        <Image src={`${CDN}/13.jpg`} />
       </Zoom>
-      <Gif name="boxTeam514" />
+      <Gif src={`${CDN}/14.gif`} />
       <Zoom margin="0">
-        <Image src={src15} />
+        <Image src={`${CDN}/15.jpg`} />
       </Zoom>
       <Desc fw={400} style={{ textAlign: "center", marginTop: "4rem" }}>
         <a

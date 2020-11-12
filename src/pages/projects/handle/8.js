@@ -4,7 +4,9 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
 import Video from "../../../components/video";
-import src1 from "../../../static/images/projects/handle/team8/1.jpg";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team8";
 
 export default () => {
   return (
@@ -16,7 +18,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="4rem 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
       <Video src="https://www.youtube.com/embed/zwt1yl1k6d0" />
     </ProjectLayout>

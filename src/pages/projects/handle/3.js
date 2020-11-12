@@ -4,18 +4,6 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src2 from "../../../static/images/projects/handle/team3/02.png";
-import src3 from "../../../static/images/projects/handle/team3/03.png";
-import src5 from "../../../static/images/projects/handle/team3/05.png";
-import src6 from "../../../static/images/projects/handle/team3/06.png";
-import src7 from "../../../static/images/projects/handle/team3/07.png";
-import src8 from "../../../static/images/projects/handle/team3/08.png";
-import src9 from "../../../static/images/projects/handle/team3/09.png";
-import src10 from "../../../static/images/projects/handle/team3/10.png";
-import src11 from "../../../static/images/projects/handle/team3/11.png";
-import src12 from "../../../static/images/projects/handle/team3/12.png";
-import src13 from "../../../static/images/projects/handle/team3/13.png";
-import src16 from "../../../static/images/projects/handle/team3/16.png";
 
 export default () => {
   return (
@@ -27,46 +15,46 @@ export default () => {
         수 있으며 360°의 공간 속에서 배우와 관객이 무대와 하나가 되는 입체적
         공연장으로 디자인한 프로젝트이다.
       </Desc>
-      <Gif name="handleTeam3One" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/01.gif" />
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/02.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/03.png" />
       </Zoom>
-      <Gif name="handleTeam3Three" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/04.gif" />
       <Zoom margin="0">
-        <Image src={src5} />
-      </Zoom>
-      <Zoom margin="0">
-        <Image src={src6} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/05.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src7} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/06.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src8} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/07.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src9} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/08.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src10} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/09.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src11} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/10.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src12} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/11.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src13} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/12.png" />
       </Zoom>
-      <Gif name="handleTeam3Five" />
+      <Zoom margin="0">
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/13.png" />
+      </Zoom>
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/14.gif" />
       <div style={{ marginTop: "50rem" }} />
-      <Gif name="handleTeam3Six" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/15.gif" />
       <Zoom margin="0">
-        <Image src={src16} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/16.png" />
       </Zoom>
       <Desc style={{ fontSize: "12px", marginTop: "2rem", textAlign: "end" }}>
         이미지출처_EMK뮤지컬컴퍼니

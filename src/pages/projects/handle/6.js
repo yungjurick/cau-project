@@ -4,7 +4,6 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/handle/team6/1.png";
 import Video from "../../../components/video";
 
 export default () => {
@@ -25,19 +24,19 @@ export default () => {
       />
 
       <Zoom margin="0">
-        <Image src={src1} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team6/1.png" />
       </Zoom>
 
-      <Gif name="handleTeam6Two" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team6/2.gif" />
 
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/Ihd0cAfwG64"
       />
 
-      <Gif name="handleTeam6Three" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team6/3.gif" />
 
-      <Gif name="handleTeam6Four" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team6/4.gif" />
     </ProjectLayout>
   );
 };

@@ -4,10 +4,6 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import WrapForTeam from "../../../components/wrapForTeam";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/handle/team5/1.jpg";
-import src2 from "../../../static/images/projects/handle/team5/2.jpg";
-import src3 from "../../../static/images/projects/handle/team5/3.jpg";
-import src4 from "../../../static/images/projects/handle/team5/4.jpg";
 
 export default () => {
   return (
@@ -31,17 +27,17 @@ export default () => {
         src="https://www.youtube.com/embed/Bx0EJwTMXtk"
       >
         <Zoom margin="4rem 0 0 0">
-          <Image src={src1} />
+          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/1.jpg" />
         </Zoom>
 
         <Zoom margin="0">
-          <Image src={src2} />
+          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/2.jpg" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src3} />
+          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/3.jpg" />
         </Zoom>
         <Zoom margin="0">
-          <Image src={src4} />
+          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/4.jpg" />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

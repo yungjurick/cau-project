@@ -4,11 +4,10 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/box/team1/1.jpg";
-import src4 from "../../../static/images/projects/box/team1/4.jpg";
-import src6 from "../../../static/images/projects/box/team1/6.jpg";
-
 import Video from "../../../components/video";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team1";
 
 export default () => {
   return (
@@ -18,7 +17,7 @@ export default () => {
       </Desc>
 
       <Zoom margin="4rem 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
 
       <Desc fw={400}>
@@ -35,13 +34,13 @@ export default () => {
       />
 
       <Zoom margin="4rem 0">
-        <Image src={src4} />
+        <Image src={`${CDN}/4.jpg`} />
       </Zoom>
 
-      <Gif name="boxTeam1Src1" />
+      <Gif src={`${CDN}/5.gif`} />
 
       <Zoom margin="4rem 0">
-        <Image src={src6} />
+        <Image src={`${CDN}/6.jpg`} />
       </Zoom>
 
       <Desc fw={400} style={{ fontSize: "12px" }}>

@@ -4,14 +4,6 @@ import Desc from "../../../components/desc";
 import Gif from "../../../components/gif";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src2 from "../../../static/images/projects/handle/team4/2.jpg";
-import src3 from "../../../static/images/projects/handle/team4/4.jpg";
-import src4 from "../../../static/images/projects/handle/team4/7.jpg";
-import src5 from "../../../static/images/projects/handle/team4/9.jpg";
-import src6_1 from "../../../static/images/projects/handle/team4/10_1.jpg";
-import src6_2 from "../../../static/images/projects/handle/team4/10_2.jpg";
-import src7 from "../../../static/images/projects/handle/team4/12.jpg";
-import src8 from "../../../static/images/projects/handle/team4/13.jpg";
 import Video from "../../../components/video";
 
 export default () => {
@@ -28,45 +20,45 @@ export default () => {
         열어보려 한다.
       </Desc>
       <div style={{ marginTop: "4rem" }} />
-      <Gif name="handleTeam4One" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/1.gif" />
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/2.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/aoItkKUw1HU"
       />
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/4.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/cGBvr1j3iFA"
       />
-      <Gif name="handleTeam4Six" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/6.gif" />
       <Zoom margin="0">
-        <Image src={src4} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/7.jpg" />
       </Zoom>
-      <Gif name="handleTeam4Eight" />
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/8.gif" />
       <Zoom margin="0">
-        <Image src={src5} />
-      </Zoom>
-      <Zoom margin="0">
-        <Image src={src6_1} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/9.jpg" />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src6_2} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_1.jpg" />
       </Zoom>
-      <Gif name="handleTeam4Eleven" />
       <Zoom margin="0">
-        <Image src={src7} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_2.jpg" />
+      </Zoom>
+      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/11.gif" />
+      <Zoom margin="0">
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/12.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/dHDyqOM4ITA"
       />
       <Zoom margin="0">
-        <Image src={src8} />
+        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/13.jpg" />
       </Zoom>
     </ProjectLayout>
   );

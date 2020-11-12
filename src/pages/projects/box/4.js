@@ -3,9 +3,11 @@ import styled from "styled-components";
 import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/box/team4/1.jpg";
 
 import Video from "../../../components/video";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team4";
 
 export default () => {
   return (
@@ -26,7 +28,7 @@ export default () => {
       />
 
       <Zoom margin="4rem 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
     </ProjectLayout>
   );

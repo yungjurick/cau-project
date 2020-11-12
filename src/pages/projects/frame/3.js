@@ -4,10 +4,9 @@ import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Video from "../../../components/video";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/frame/team3/1.jpg";
-import src2 from "../../../static/images/projects/frame/team3/2.jpg";
-import src3 from "../../../static/images/projects/frame/team3/3.jpg";
-import src4 from "../../../static/images/projects/frame/team3/4.jpg";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/frame/team3";
 
 export default () => {
   return (
@@ -24,16 +23,16 @@ export default () => {
       </Desc>
 
       <Zoom margin="4rem 0 0 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src={`${CDN}/2.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src={`${CDN}/3.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src4} />
+        <Image src={`${CDN}/4.jpg`} />
       </Zoom>
 
       <Video

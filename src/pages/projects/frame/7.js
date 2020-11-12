@@ -3,13 +3,9 @@ import styled from "styled-components";
 import Desc from "../../../components/desc";
 import ProjectLayout from "../../../components/projectLayout";
 import Zoom from "../../../components/zoom";
-import src1 from "../../../static/images/projects/frame/team7/1.jpg";
-import src2 from "../../../static/images/projects/frame/team7/2.jpg";
-import src3 from "../../../static/images/projects/frame/team7/3.jpg";
-import src4 from "../../../static/images/projects/frame/team7/4.jpg";
-import src5 from "../../../static/images/projects/frame/team7/5.jpg";
-import src6 from "../../../static/images/projects/frame/team7/6.jpg";
-import src7 from "../../../static/images/projects/frame/team7/7.jpg";
+
+const CDN =
+  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/frame/team7";
 
 export default () => {
   return (
@@ -27,29 +23,29 @@ export default () => {
       </Desc>
 
       <Zoom margin="4rem 0 0 0">
-        <Image src={src1} />
+        <Image src={`${CDN}/1.jpg`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src2} />
+        <Image src={`${CDN}/2.jpg`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src3} />
+        <Image src={`${CDN}/3.jpg`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src4} />
+        <Image src={`${CDN}/4.jpg`} />
       </Zoom>
 
       <Zoom margin="0">
-        <Image src={src5} />
+        <Image src={`${CDN}/5.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src6} />
+        <Image src={`${CDN}/6.jpg`} />
       </Zoom>
       <Zoom margin="0">
-        <Image src={src7} />
+        <Image src={`${CDN}/7.jpg`} />
       </Zoom>
     </ProjectLayout>
   );
