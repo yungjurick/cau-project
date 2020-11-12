@@ -108,7 +108,10 @@ export default function GuestPage() {
   return (
     <Layout>
       <Container>
-        <h3 style={{ textAlign: "center" }}>내부수리중</h3>
+        <h3 style={{ textAlign: "center" }}>
+          🚧 <br />
+          내부수리중
+        </h3>
       </Container>
     </Layout>
   );
