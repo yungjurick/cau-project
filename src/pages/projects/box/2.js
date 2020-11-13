@@ -5,7 +5,7 @@ import Zoom from "../../../components/zoom";
 import Desc from "../../../components/desc";
 
 const CDN =
-  "https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team2";
+  "https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/box/team2";
 
 export default () => {
   return (

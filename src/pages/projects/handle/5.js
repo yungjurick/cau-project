@@ -27,17 +27,17 @@ export default () => {
         src="https://www.youtube.com/embed/Bx0EJwTMXtk"
       >
         <Zoom margin="4rem 0 0 0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/1.jpg" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/1.jpg" />
         </Zoom>
 
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/2.jpg" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/2.jpg" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/3.jpg" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/3.jpg" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/4.jpg" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team5/4.jpg" />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

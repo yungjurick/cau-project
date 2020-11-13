@@ -23,7 +23,7 @@ export default () => {
         청년들의 공간과 시간 그리고 생각들이 이 프로젝트에 담겨있다.
       </Desc>
       <Zoom>
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team1/flex_us.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team1/flex_us.jpg" />
       </Zoom>
       <Video src="https://youtube.com/embed/jWNx_b73Xlk" />
     </ProjectLayout>

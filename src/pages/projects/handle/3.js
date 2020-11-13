@@ -15,46 +15,46 @@ export default () => {
         수 있으며 360°의 공간 속에서 배우와 관객이 무대와 하나가 되는 입체적
         공연장으로 디자인한 프로젝트이다.
       </Desc>
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/01.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/01.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/02.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/02.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/03.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/03.png" />
       </Zoom>
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/04.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/04.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/05.png" />
-      </Zoom>
-      <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/06.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/05.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/07.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/06.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/08.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/07.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/09.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/08.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/10.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/09.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/11.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/10.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/12.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/11.png" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/13.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/12.png" />
       </Zoom>
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/14.gif" />
+      <Zoom margin="0">
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/13.png" />
+      </Zoom>
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/14.gif" />
       <div style={{ marginTop: "50rem" }} />
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/15.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/15.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/16.png" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team3/16.png" />
       </Zoom>
       <Desc style={{ fontSize: "12px", marginTop: "2rem", textAlign: "end" }}>
         이미지출처_EMK뮤지컬컴퍼니

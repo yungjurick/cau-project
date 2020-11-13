@@ -22,37 +22,37 @@ export default () => {
       <div style={{ marginTop: "4rem" }}></div>
       <WrapForTeam top="8.5%" src="https://www.youtube.com/embed/kyrUe9C9n1Q">
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/1.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/1.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/2.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/2.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/3.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/3.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/4.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/4.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/5.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/5.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/6.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/6.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/7.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/7.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/8.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/8.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/9.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/9.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/10.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/10.png" />
         </Zoom>
         <Zoom margin="0">
-          <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/11.png" />
+          <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team2/11.png" />
         </Zoom>
       </WrapForTeam>
     </ProjectLayout>

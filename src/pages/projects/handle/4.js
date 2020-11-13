@@ -20,45 +20,45 @@ export default () => {
         열어보려 한다.
       </Desc>
       <div style={{ marginTop: "4rem" }} />
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/1.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/1.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/2.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/2.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/aoItkKUw1HU"
       />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/4.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/4.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/cGBvr1j3iFA"
       />
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/6.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/6.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/7.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/7.jpg" />
       </Zoom>
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/8.gif" />
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/8.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/9.jpg" />
-      </Zoom>
-      <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_1.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/9.jpg" />
       </Zoom>
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_2.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_1.jpg" />
       </Zoom>
-      <Gif src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/11.gif" />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/12.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/10_2.jpg" />
+      </Zoom>
+      <Gif src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/11.gif" />
+      <Zoom margin="0">
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/12.jpg" />
       </Zoom>
       <Video
         style={{ margin: 0 }}
         src="https://www.youtube.com/embed/dHDyqOM4ITA"
       />
       <Zoom margin="0">
-        <Image src="https://rawcdn.githack.com/khw1031/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/13.jpg" />
+        <Image src="https://rawcdn.githack.com/yungjurick/cdn/d4689d7ccffc21262863f337f70c6b687b4d6ecf/handle/team4/13.jpg" />
       </Zoom>
     </ProjectLayout>
   );

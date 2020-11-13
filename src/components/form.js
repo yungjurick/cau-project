@@ -76,7 +76,6 @@ export function Form({ handleFilter, handleAddComments }) {
 
   return (
     <Container onSubmit={onSubmit}>
-      <To>To. </To>
       <ToSelect
         className="gothic"
         searchable={false}
@@ -102,7 +101,6 @@ export function Form({ handleFilter, handleAddComments }) {
         onChange={onChangeContent}
         placeholder="축하 메시지를 남겨주세요 :)"
       />
-      <ToFrom>From. </ToFrom>
       <From
         className="gothic"
         type="text"
