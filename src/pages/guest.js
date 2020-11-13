@@ -105,16 +105,16 @@ export default function GuestPage() {
     setComments([data, ...comments]);
   };
 
-  return (
-    <Layout>
-      <Container>
-        <h3 style={{ textAlign: "center" }}>
-          🚧 <br />
-          내부수리중
-        </h3>
-      </Container>
-    </Layout>
-  );
+  // return (
+  //   <Layout>
+  //     <Container>
+  //       <h3 style={{ textAlign: "center" }}>
+  //         🚧 <br />
+  //         내부수리중
+  //       </h3>
+  //     </Container>
+  //   </Layout>
+  // );
   if (!comments) return <Loading />;
 
   return (
@@ -130,7 +130,7 @@ export default function GuestPage() {
             placeholder="받은 메시지를 확인하세요."
             options={[
               { value: null, label: "전체보기" },
-              { value: "모두", label: "모두" },
+              { value: "모두", label: "모두에게" },
               ...go(
                 projectInfo,
                 values,
@@ -139,7 +139,7 @@ export default function GuestPage() {
                 flat,
                 unique,
                 sortBy(identity),
-                map(value => ({ value, label: value }))
+                map(value => ({ value, label: `${value}에게` }))
               ),
             ]}
             onChange={handleChangeTo}

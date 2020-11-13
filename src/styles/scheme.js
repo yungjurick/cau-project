@@ -1,7 +1,8 @@
 export const COLORS = {
   background: "#fff",
   primary: "#0029f5",
-  primaryDimmed: "#6e85fa"
+  primaryDimmed: "#6e85fa",
+  yellow: "#F9F912"
 };
 
 export const SIZES = {

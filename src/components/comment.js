@@ -35,43 +35,46 @@ export default function Comment({ id, content, to, from, password }) {
 
   return (
     <Wrapper id={id} ref={commentsRef}>
+      <Outside>
+        <To className="gothic">{to} <ToSpan>에게 도착한 메시지</ToSpan></To>
+        <Delete onClick={onDelete}>&times;</Delete>
+      </Outside>
       <Inner>
-        <To className="gothic">To. {to}</To>
+        <From className="gothic">{from}</From>
         <Content className="gothic">{content}</Content>
-        <From className="gothic">From. {from}</From>
       </Inner>
-      <Delete onClick={onDelete}>&times;</Delete>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem 0;
   position: relative;
   flex-grow: 1;
   word-break: break-all;
-  &:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-  border-bottom: 1px solid ${COLORS.primary};
   ${mobileLAbove`
     align-items: center;
   `}
 `;
-
+const Outside = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 7px;
+  margin-bottom: 5px;
+`;
 const Inner = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   margin-right: auto;
   align-items: center;
-  ${mobileLAbove`
+  border: 1px solid ${COLORS.primary};
+  border-radius: 7px;
+  padding: 1.5rem;
+  /* ${mobileLAbove`
     align-items: center;
     flex-direction: row;  
-  `}
+  `} */
 `;
 
 const Delete = styled.button`
@@ -79,12 +82,8 @@ const Delete = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 1.2rem;
-  padding: 0.45rem;
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
   border: 0;
+  font-size: 1.5rem;
   color: ${COLORS.primary};
   background: none;
   :focus {
@@ -92,7 +91,6 @@ const Delete = styled.button`
   }
   ${mobileLAbove`
     font-size: 1.5rem;
-    padding: 0.35rem;
   `}
 `;
 
@@ -100,14 +98,13 @@ const To = styled.p`
   font-size: 1rem;
   color: ${COLORS.primary};
   width: 100%;
-  min-width: 100%;
-  margin-bottom: 0.65rem;
   font-weight: 700;
-  ${mobileLAbove`
-    width: 100px;
-    min-width: 100px;
-    margin-bottom: 0;
-  `}
+`;
+
+const ToSpan = styled.span`
+  font-size: 1rem;
+  color: ${COLORS.primary};
+  font-weight: 300;
 `;
 const From = styled.p`
   font-size: 1rem;
@@ -115,15 +112,8 @@ const From = styled.p`
   width: 100%;
   min-width: 100%;
   font-weight: 700;
-  text-align: end;
-  margin-top: 0.65rem;
-  margin-right: -50px;
-  ${mobileLAbove`
-    width: 100px;
-    margin-top: 0;
-    margin-right: 0;
-    min-width: 100px;
-  `}
+  margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 const Content = styled.p`
@@ -131,6 +121,6 @@ const Content = styled.p`
   line-height: 1.4;
   font-size: 1rem;
   flex-basis: 100%;
-  font-weight: 700;
+  font-weight: 300;
   color: ${COLORS.primary};
 `;

@@ -76,37 +76,47 @@ export function Form({ handleFilter, handleAddComments }) {
 
   return (
     <Container onSubmit={onSubmit}>
-      <ToSelect
-        className="gothic"
-        searchable={false}
-        placeholder="모두"
-        options={[
-          { value: "모두", label: "모두" },
-          ...go(
-            projectInfo,
-            values,
-            flat,
-            map(sel("people")),
-            flat,
-            unique,
-            sortBy(identity),
-            map(value => ({ value, label: value }))
-          ),
-        ]}
-        onChange={handleChangeTo}
-      />
+      <ToWrapper>
+        <ToSelect
+          className="gothic"
+          searchable={false}
+          placeholder="모두"
+          options={[
+            { value: "모두", label: "모두" },
+            ...go(
+              projectInfo,
+              values,
+              flat,
+              map(sel("people")),
+              flat,
+              unique,
+              sortBy(identity),
+              map(value => ({ value, label: value }))
+            ),
+          ]}
+          onChange={handleChangeTo}
+        />
+        <WrapperText className="gothic">
+          에게
+        </WrapperText>
+      </ToWrapper>
+      <FromWrapper>
+        <From
+          className="gothic"
+          type="text"
+          value={from}
+          onChange={onChangeFrom}
+          placeholder="익명"
+        />
+        <WrapperText className="gothic">
+          (으)로 부터
+        </WrapperText>
+      </FromWrapper>
       <Comment
         className="gothic"
         value={content}
         onChange={onChangeContent}
-        placeholder="축하 메시지를 남겨주세요 :)"
-      />
-      <From
-        className="gothic"
-        type="text"
-        value={from}
-        onChange={onChangeFrom}
-        placeholder="익명"
+        placeholder={`${currentTo}에게 축하의 말을 남겨주세요..`}
       />
       <Password
         className="gothic"
@@ -115,64 +125,63 @@ export function Form({ handleFilter, handleAddComments }) {
         onChange={onChangePassword}
         placeholder="비밀번호"
       />
-      <Button disabled={!isButtonAbled()}>SEND</Button>
+      <Button disabled={!isButtonAbled()}>보내기</Button>
     </Container>
   );
 }
 
-const To = styled.p`
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  margin-right: 5px;
-  margin-top: 1rem;
-  ${tabletAbove`
-    margin-top: 0;
-  `}
-`;
-const ToFrom = styled.p`
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  margin-right: 5px;
-  margin-top: 2rem;
-  ${tabletAbove`
-    margin-top: 0;
-  `}
-`;
-
 const Container = styled.form`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: [col-start] 40% [col-1] 25% [col-2] auto [col-end];
+  grid-template-rows: [row-start] auto [row-1] auto [row-2] auto [row-end];
+  column-gap: 5px;
+
   width: 100%;
   :focus {
     outline: none;
   }
   ${tabletAbove`
-    flex-direction: row;
-    align-items: stretch;
-    height: 40px;
+    grid-template-columns: [col-start] 20% [col-1] 25% [col-2] auto [col-3] 20% [col-4] 10% [col-end];
+    grid-template-rows: [row-start] auto [row-1] auto [row-end];
     min-height: 40px;
+  `}
+`;
+
+const ToWrapper = styled.div`
+  border-radius: 7px !important;
+  border: 1.5px solid ${COLORS.primary} !important;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  ${tabletAbove`
+    grid-column-start: col-start;
+    grid-column-end: col-1;
+    grid-row-start: row-start;
+    grid-row-end: row-1;
   `}
 `;
 
 const ToSelect = styled(Select)`
   margin-right: 10px;
   color: ${COLORS.primary};
-  border-radius: 0 !important;
   border: none !important;
-  border-bottom: 1px solid ${COLORS.primary} !important;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 40px;
+  flex-direction: row-reverse !important;
+  width: 80px !important;
+  .react-dropdown-select-content > span {
+    margin-left: 0.5rem !important;
+  }
   .react-dropdown-select-input {
     position: absolute;
+    text-align: center;
     font-family: ${FONT_FAMILY_GOTHIC};
-    top: 11px;
-    left: 0;
+    top: 0;
+    left: 0.5rem !important;
     width: 100%;
+    height: 100%;
     color: ${COLORS.primary};
     margin: 0;
     font-size: 1rem;
@@ -180,55 +189,96 @@ const ToSelect = styled(Select)`
       color: ${COLORS.primary};
     }
   }
-  margin-bottom: 1rem;
   ${tabletAbove`
-    min-width: 150px !important;
-    width: 150px !important;
-    margin-bottom: 0;
+    grid-column-start: col-start;
+    grid-column-end: col-1;
+    grid-row-start: row-start;
+    grid-row-end: row-1;
+    width: 140px !important;
+    .react-dropdown-select-content > span {
+      margin-left: 2.4rem !important;
+    }
   `}
 `;
 
-const Comment = styled.input`
+const Comment = styled.textarea`
+  grid-column-start: col-start;
+  grid-column-end: col-end;
+  grid-row-start: row-1;
+  grid-row-end: row-2;
+  resize: none;
+  padding: 6px;
   font-size: 1rem;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid ${COLORS.primary};
+  border-radius: 7px !important;
+  border: 1.5px solid ${COLORS.primary} !important;
   flex-grow: 0;
-  height: 40px;
+  height: 120px;
   color: ${COLORS.primary};
   ::placeholder {
-    color: ${COLORS.primary};
+    color: gray;
   }
   :focus {
     outline: none;
   }
   ${tabletAbove`
-    flex-grow: 1;
-    margin-right: 10px;
+    height: 40px;
+    grid-column-start: col-start;
+    grid-column-end: col-4;
+    grid-row-start: row-1;
+    grid-row-end: row-end;
+  `}
+`;
+
+const FromWrapper = styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-end;
+  grid-row-start: row-start;
+  grid-row-end: row-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 7px !important;
+  border: 1.5px solid ${COLORS.primary} !important;
+  padding: 7px;
+  ${tabletAbove`
+    grid-column-start: col-1;
+    grid-column-end: col-2;
+    grid-row-start: row-start;
+    grid-row-end: row-1;
   `}
 `;
 
 const From = styled.input`
   border: 0;
+  width: 60%;
   margin-right: 0;
   font-size: 1rem;
+  border-radius: 7px;
   color: ${COLORS.primary};
   :focus {
     outline: none;
   }
-  width: 100%;
   ::placeholder {
-    color: ${COLORS.primary};
+    color: gray;
   }
-  height: 40px;
-  width: 100%;
-  border-bottom: 1px solid ${COLORS.primary};
-  ${tabletAbove`
-    margin-right: 10px;
-    width: 140px;
-  `}
 `;
+
+const WrapperText = styled.p`
+  color: ${COLORS.primary};
+  font-size: 1rem;
+  font-weight: bold;
+`;
+
 const Password = styled.input`
+  grid-column-start: col-start;
+  grid-column-end: col-2;
+  grid-row-start: row-2;
+  grid-row-end: row-end;
   border: 0;
   margin-right: 0;
   height: 40px;
@@ -245,26 +295,33 @@ const Password = styled.input`
   width: 100%;
   border-bottom: 1px solid ${COLORS.primary};
   ${tabletAbove`
-    margin-right: 0.8rem;
     margin-top: 0;
-    width: 140px;
+    grid-column-start: col-3;
+    grid-column-end: col-4;
+    grid-row-start: row-start;
+    grid-row-end: row-1;
   `}
 `;
 const Button = styled.button`
-  background: ${COLORS.primary};
-  border: 1px solid ${COLORS.primary};
+  background: ${COLORS.yellow};
+  border: 1.5px solid ${COLORS.primary};
+  border-radius: 7px;
   cursor: pointer;
-  color: #fff;
+  color: ${COLORS.primary};
   font-weight: 700;
   padding: 0.6rem 1rem;
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
   width: 100%;
   height: 40px;
   font-size: 1rem;
   ${tabletAbove`
     margin-top: 0;
-    min-width: 100px;
-    flex-basis: 100px;
+    height: auto;
+    padding: 0;
+    grid-column-start: col-4;
+    grid-column-end: col-end;
+    grid-row-start: row-start;
+    grid-row-end: row-end;
   `}
   :disabled {
     color: ${COLORS.primary};
