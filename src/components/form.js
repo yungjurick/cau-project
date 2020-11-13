@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { firestore } from "../../firebase";
-import { tabletAbove } from "../styles/mediaQuery";
+import { tabletAbove, mobileLAbove, laptopAbove } from "../styles/mediaQuery";
 import { COLORS, FONT_FAMILY_GOTHIC } from "../styles/scheme";
 import Select from "react-dropdown-select";
 import { projectInfo } from "../config/projects";
@@ -189,14 +189,20 @@ const ToSelect = styled(Select)`
       color: ${COLORS.primary};
     }
   }
+  ${laptopAbove`
+    width: 140px !important;
+    .react-dropdown-select-content > span {
+      margin-left: 2.4rem !important;
+    }
+  `}
   ${tabletAbove`
     grid-column-start: col-start;
     grid-column-end: col-1;
     grid-row-start: row-start;
     grid-row-end: row-1;
-    width: 140px !important;
+    width: 90px !important;
     .react-dropdown-select-content > span {
-      margin-left: 2.4rem !important;
+      margin-left: 1rem !important;
     }
   `}
 `;
