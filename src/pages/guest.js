@@ -128,6 +128,7 @@ export default function GuestPage() {
             className="gothic"
             searchable={false}
             placeholder="전체보기"
+            value={null}
             options={[
               { value: null, label: "전체보기" },
               { value: "모두", label: "모두" },
@@ -189,7 +190,7 @@ const ToSelect = styled(Select)`
     font-family: ${FONT_FAMILY_GOTHIC};
     top: 7px;
     left: 0;
-    width: 84px;
+    width: 84px !important;
     color: ${COLORS.primary};
     margin: 0;
     font-size: 1rem;

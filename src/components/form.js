@@ -81,6 +81,7 @@ export function Form({ handleFilter, handleAddComments }) {
           className="gothic"
           searchable={false}
           placeholder="모두"
+          value={"모두"}
           options={[
             { value: "모두", label: "모두" },
             ...go(
