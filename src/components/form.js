@@ -215,6 +215,8 @@ const Comment = styled.textarea`
   grid-row-start: row-1;
   grid-row-end: row-2;
   resize: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
   padding: 6px;
   font-size: 1rem;
   width: 100%;
@@ -292,6 +294,8 @@ const Password = styled.input`
   height: 40px;
   margin-top: 0.8rem;
   font-size: 1rem;
+  -webkit-appearance: none;
+  border-radius: 0;
   color: ${COLORS.primary};
   ::placeholder {
     color: ${COLORS.primary};
