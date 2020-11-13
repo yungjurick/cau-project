@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import { firestore } from "../../firebase";
 import Loading from "../components/loading";
 import Comment from "../components/comment";
-import { mobileLAbove } from "../styles/mediaQuery";
+import { mobileLAbove, tabletAbove } from "../styles/mediaQuery";
 import { Form } from "../components/form";
 import NoComments from "../components/noComments";
 import Footer from "../components/footer";
@@ -127,10 +127,10 @@ export default function GuestPage() {
           <ToSelect
             className="gothic"
             searchable={false}
-            placeholder="받은 메시지를 확인하세요."
+            placeholder="전체보기"
             options={[
               { value: null, label: "전체보기" },
-              { value: "모두", label: "모두에게" },
+              { value: "모두", label: "모두" },
               ...go(
                 projectInfo,
                 values,
@@ -139,7 +139,7 @@ export default function GuestPage() {
                 flat,
                 unique,
                 sortBy(identity),
-                map(value => ({ value, label: `${value}에게` }))
+                map(value => ({ value, label: value }))
               ),
             ]}
             onChange={handleChangeTo}
@@ -182,14 +182,14 @@ const ToSelect = styled(Select)`
   border: none !important;
   border-radius: 0 !important;
   border-bottom: 1px solid ${COLORS.primary} !important;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin: 0 0 1rem auto;
+  width: 84px !important;
   .react-dropdown-select-input {
     position: absolute;
     font-family: ${FONT_FAMILY_GOTHIC};
     top: 7px;
     left: 0;
-    width: 100%;
+    width: 84px;
     color: ${COLORS.primary};
     margin: 0;
     font-size: 1rem;
@@ -197,8 +197,13 @@ const ToSelect = styled(Select)`
       color: ${COLORS.primary};
     }
   }
-  ${mobileLAbove`
+  ${tabletAbove`
     width: 250px !important;
+    grid-row-start: row-1;
+    grid-row-end: row-2;
+    margin-left: auto;
+    margin-top: 1rem;
+    width: 100%;
   `}
 `;
 
@@ -246,11 +251,15 @@ const Title = styled.h2`
   }
 `;
 
-const Contents = styled.div``;
+const Contents = styled.div`
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: [row-start] auto [row-1] auto [row-2] auto [row-end];
+`;
 
 const Wrapper = styled.div`
   margin: 2rem 0;
-  ${mobileLAbove`
-    margin: 3rem 0;
+  ${tabletAbove`
+    margin: 0;
   `};
 `;

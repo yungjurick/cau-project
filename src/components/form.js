@@ -143,6 +143,8 @@ const Container = styled.form`
   ${tabletAbove`
     grid-template-columns: [col-start] 20% [col-1] 25% [col-2] auto [col-3] 20% [col-4] 10% [col-end];
     grid-template-rows: [row-start] auto [row-1] auto [row-end];
+    grid-row-start: row-start;
+    grid-row-end: row-1;
     min-height: 40px;
   `}
 `;
