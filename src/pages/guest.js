@@ -120,9 +120,6 @@ export default function GuestPage() {
   return (
     <Layout>
       <Container>
-        <Title>
-          Guest Book<span className="gothic">방명록</span>
-        </Title>
         <Contents>
           <ToSelect
             className="gothic"
