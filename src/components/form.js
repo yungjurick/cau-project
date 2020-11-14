@@ -56,7 +56,7 @@ export function Form({ handleFilter, handleAddComments }) {
     if (!isButtonAbled) return;
     let data = {
       to: currentTo || "모두",
-      from: from || "익명",
+      from: from || "누군가",
       password,
       content,
       time: new Date(),
@@ -107,7 +107,7 @@ export function Form({ handleFilter, handleAddComments }) {
           type="text"
           value={from}
           onChange={onChangeFrom}
-          placeholder="익명"
+          placeholder="누군가"
         />
         <WrapperText className="gothic">
           (으)로 부터
@@ -126,7 +126,9 @@ export function Form({ handleFilter, handleAddComments }) {
         onChange={onChangePassword}
         placeholder="비밀번호"
       />
-      <Button disabled={!isButtonAbled()}>보내기</Button>
+      <ButtonContainer>
+        <Button disabled={!isButtonAbled()}>보내기</Button>
+      </ButtonContainer>
     </Container>
   );
 }
@@ -142,7 +144,7 @@ const Container = styled.form`
     outline: none;
   }
   ${tabletAbove`
-    grid-template-columns: [col-start] 20% [col-1] 25% [col-2] auto [col-3] 20% [col-4] 10% [col-end];
+    grid-template-columns: [col-start] 20% [col-1] 25% [col-2] auto [col-3] 20% [col-4] 11% [col-end];
     grid-template-rows: [row-start] auto [row-1] auto [row-end];
     grid-row-start: row-start;
     grid-row-end: row-1;
@@ -315,26 +317,40 @@ const Password = styled.input`
     grid-row-end: row-1;
   `}
 `;
-const Button = styled.button`
-  background: ${COLORS.yellow};
-  border: 1.5px solid ${COLORS.primary};
-  border-radius: 7px;
-  cursor: pointer;
-  color: ${COLORS.primary};
-  font-weight: 700;
-  padding: 0.6rem 1rem;
-  margin-top: 0.8rem;
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  height: 40px;
-  font-size: 1rem;
+  height: 100%;
   ${tabletAbove`
     margin-top: 0;
-    height: auto;
     padding: 0;
+    align-items: center;
     grid-column-start: col-4;
     grid-column-end: col-end;
     grid-row-start: row-start;
     grid-row-end: row-end;
+  `}
+`;
+const Button = styled.button`
+  background: ${COLORS.yellow};
+  border: 1.5px solid ${COLORS.primary};
+  border-radius: 50%;
+  cursor: pointer;
+  color: ${COLORS.primary};
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  /* margin-top: 0.8rem; */
+  width: 100%;
+  height: 80%;
+  max-height: 90px;
+  font-size: 1rem;
+  ${tabletAbove`
+    margin-top: 0;
+    height: 90px;
+    width: 90px;
+    padding: 0;
   `}
   :disabled {
     color: ${COLORS.primary};
